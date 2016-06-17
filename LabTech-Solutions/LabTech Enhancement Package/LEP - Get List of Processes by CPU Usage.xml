@@ -1,0 +1,46 @@
+﻿<LabTech_Expansion
+	Version="60.276"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5864</ScriptId>
+				<FolderId>217</FolderId>
+				<ScriptName>LEP - Get List of Processes by CPU Usage</ScriptName>
+				<ScriptNotes>This script will retrieve a list of the top 20 running processes by CPU usage and display them in a table format. 
+    The original functionality of this script was designed to be run when a monitor triggers off High CPU usage to allow for a technician to later view what was eating up the CPU on that machine at the time of the alert.</ScriptNotes>
+				<Permission>1,2,4,5,</Permission>
+				<EditPermission>1,4,5,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMffTefLfNmll2P0qf5NF9M8jrdeTBK93Z2d9O9R/d2Hu0cpC+/eHzXe+fx62ldrNqfzOumqJYAHn6g33++LmZH05296f79e7PtBwcH97Z3d/N72weTB9PtnZ3dh7Pdg4f702lu3ucXHt/1h/QbJ/8PRjDnweIAAAA=</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/ntbFqn2atdnRb5ykqf7d8B/05+m7ts7w7bMiL2dNetd88TKrs0Xe5rX32edlNclK7wMB9pPUqKiWR7t7Dx8+eLDz6e7O47vhN0Hzz9fF7Gi6szfdv39vtv3g4ODe9u5ufm/7YPJgur2zs/twtnvwcH86zQ0UfoGR1w8afyiv23xlh3M8bRmTx3f1N/382XrJf5/N8J33lz/a3c7o9zp/3+v8vd/5+75HmKpuj0AG/NTPTqplWyzXOT63v+t3XzbPi0XBr5hf9Zuz5SxfthkPhr71//RJ4qiwgSx7G8iyt3NvmDBHF3m7fbUoqslP59M23Z6W6XeL5b293/9lXp8/q+pF1rb5DGzEn7ysq+nv/2Ze59ks/Zn090h/8e/2+49fEDel28uqLYu3efrxt37/N1Wbld/6OP0l1KQhMm0rcAIwpSG+fFVN84a+eFPgxVneTNEwLxmB86Ju2nRvhz46pz+zdVul6GFUzFY1v0i/tYzBaCUA9XPqCQB/Jv1y3RKYMk9/t3x5+eiqWM6K+vct2+Zy+vsC/+dF047bd+3ju0qC/29yxjfAGbsHGxjj5NHvS5wwq66a3/f5m9c/efKzT7vd/y9J1f6nG2j3u0/LgrotZr97nFDUoFqs1qSDXZO9kHZHb/Km/T1b+mdMbbXNvZCeRy+F81NMS/rkOj15+VX6VZNd5Ol5VaeKxZKk53f/fW2P/KfC2w/n4+h1nqdviunbvE1PqsWCXmZA6Mb1c9y22XSOL8cK5n4wjXv/X5rGvZ29TfPYMjGG53F3YPKERvksLZq0neepP1GGat3J/N3Xq7LKZvkMumtghjyJAYnv/RyQ2vytjsf/A2eAAYOHCAAA</ScriptData>
+				<ScriptVersion>1299770610</ScriptVersion>
+				<ScriptGuid>c02c453d-7883-11e3-8b7c-0019d1894cce</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>217</FolderID>
+					<ParentID>214</ParentID>
+					<Name>LabTech Enhancement</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>214</FolderID>
+					<ParentID>0</ParentID>
+					<Name>*Packages</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

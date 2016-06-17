@@ -1,0 +1,47 @@
+﻿<LabTech_Expansion
+	Version="60.276"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5910</ScriptId>
+				<FolderId>215</FolderId>
+				<ScriptName>AD - Disable User</ScriptName>
+				<ScriptNotes>User is prompted to input a SAMAccountName. The script will disable that user on each domain controller it is run against.
+
+Designed to be run against group 828 (Domain Controller Group)</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMffVEtZ9n1KP0iu053H47SvZ3d/XR359H9B49299LjLx7f9Ro/fj2ti1X7k3ndFNUSUMMP9PvP18Xs6Hx3b5rtPpxuz87397d3d/N725PJw/3tnZ2d6d7D6af3H5xPzPv8wuO7/lh+4+T/AXGAtZLbAAAA</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/ntbFqn2atdnRb5ykqf7d8B/05+m7ts7w7bMiL2dNetd88TKrs0Xe5nVz9Pr4i8d3vb+1xedlNcnK5uhl1s7fVM+KMj9bPn/z2cj9/eXy+CJftp89vmva6quCxE8SsKJaHu0+vht+ELT6fF3Mjs5396bZ7sPp9ux8f397dze/tz2ZPNzf3tnZme49nH56/8H5xEDhF3is+kHjj/x1m68sHsfTVhHQ3/TzZ+sl/302w3feXz5xdo9e/6JyWi1Wa6JKMVMS7QZt9o4+1c/3gs/vHe3o5/eCz/c7E3Df/f26qlu8xT/1s5Nq2RbLdY7P7e/63ZfN82JR8CvmV/3mbDmjWcl4wPSt/6dPNkepDaTb20C6vYcbaPdVk9fpPGvS6bxq8mXazvOUGO14Oq3Wy/YF8Vr6e9Lfv+c4TtcOne51/v7/FR13720i5COV8OpqWVZZlw2/GXLt/n+JXHs7OxvI9XuG6ur3HBBbr5lqMdOyI8jvScm9b5qSez+LlNzd3b8dJTsk6hLT6LquDnz0ar0UzL6WMrz3/yVa7n+6gZS/+7QsqNti9rsPUPB3d3bGNOkSc5EV5e+Jf8bU1tIzoOfR06LJJmWeQvk26XYqQ0mf0VvrOteX9kOiH+HbfJa2VTpTHcPK+mV1RUDmeVmmjYChFvhiVhEWy3RKU1BXZZnXRoXfD2Zv//9Ls7e7yZZ12PRDle39b5ow9342CfM+tik9ffH0Z8Wcf/pNk+xn0z7dQLKuTvwwSnUp9eD/W5S6/372R1zGnxXCHXzThPvZVFcbPW9Pcdd5sy7b9Irc8Efp776yX8jnA8boAwn58Jsm5M+menuws8lq35Jg6EF/Cwh3FIt30qJJ1UzPjOHsuEWkVtfTad40cYMd0Jt8953/LxH8/3Vuks7Kdqpu0HlVp7/7CeOxpEn73X9f2yf/OeBDvRJBq87ZQ1J/6QaxC92l3W88BvvZnMYfpr+0+43HVJ/+bFLmltb/G/KVIuT6xsOmn10XYLN/GSjCb9ZQ7X7jEcrPJqE2mnxlKSicRih2vi5/19/1Z4ds/9+KX36YiuobD1NupswHUOZWkvezp6Z+LiIV8/dTWS75fwD+VmkwPRkAAA==</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>f12ca19c-df44-11e3-bb94-000c29c657fb</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters>SAM</Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>215</FolderID>
+					<ParentID>214</ParentID>
+					<Name>Active Directory</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>214</FolderID>
+					<ParentID>0</ParentID>
+					<Name>*Packages</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

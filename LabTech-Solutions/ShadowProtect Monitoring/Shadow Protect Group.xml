@@ -1,0 +1,721 @@
+﻿<LabTech_Expansion
+	Version="60.276"
+	Name="LabTech Group Expansion"
+	Type="Group">
+	<Group>
+		<NewDataSet>
+			<Table>
+				<GroupID>8</GroupID>
+				<ParentID>7</ParentID>
+				<Parents>,7,</Parents>
+				<Children>,</Children>
+				<depth>1</depth>
+				<Name>Shadow Protect</Name>
+				<FullName>Backup Management.Shadow Protect</FullName>
+				<Permissions>0</Permissions>
+				<Template>0</Template>
+				<AutoJoinScript>80</AutoJoinScript>
+				<Master>2</Master>
+				<LimitToParent>1</LimitToParent>
+				<Control>0</Control>
+				<ControlID>0</ControlID>
+				<Notes>All Agents with Shadow Protect will be detected and added to this group.
+This group has a script that runs once a day to monitor the status of Backup Jobs and records a Stat.</Notes>
+				<MaintenanceID>0</MaintenanceID>
+				<MaintWindowApplied>0001-01-01T00:00:00-06:00</MaintWindowApplied>
+				<GroupType>5</GroupType>
+				<Priority>5</Priority>
+				<GUID>3ac1d2bf-f1fb-11e1-b4ec-1231391d2d19</GUID>
+			</Table>
+		</NewDataSet>
+		<Search>
+			<NewDataSet>
+				<Table>
+					<SensID>80</SensID>
+					<Name>Backup - ShadowProtect</Name>
+					<SQL>Select DISTINCT Computers.ComputerID, Clients.Name as `Client Name`, Computers.Name as ComputerName, Computers.Domain, Computers.UserName, Software.`Name` as `Software_Name`, Software.`Name` as `Software_Name` from Computers, Clients, Software Where Computers.ClientID = Clients.ClientID and Software.ComputerID = Computers.ComputerID and ((((Software.`Name` like '%ShadowProtect%')) AND (Software.`Name` not like '%ImageManager%')) )</SQL>
+					<QueryType>4</QueryType>
+					<ListDATA>Related - Software Installed|Name (Software)|Like|%ShadowProtect%|=||=|^Related - Software Installed|Name (Software)|notLike|%ImageManager%|=||=|^</ListDATA>
+					<FolderID>2</FolderID>
+				</Table>
+			</NewDataSet>
+		</Search>
+		<GroupMonitor>
+			<NewDataSet>
+				<Table>
+					<AgentID>28</AgentID>
+					<GroupID>8</GroupID>
+					<SearchID>80</SearchID>
+					<Name>Shadow Protect Service</Name>
+					<CheckAction>6</CheckAction>
+					<AlertAction>15</AlertAction>
+					<AlertMessage>The Shadow Protect Service has %Result%|service=%dataout%|tzcompdisabled=1|priority=5</AlertMessage>
+					<ContactID>1</ContactID>
+					<interval>300</interval>
+					<Where>127.0.0.1</Where>
+					<What>2</What>
+					<DataOut>ShadowProtectSvc</DataOut>
+					<Comparor>1</Comparor>
+					<DataIn>1</DataIn>
+					<IDField></IDField>
+					<AlertStyle>2</AlertStyle>
+					<ScriptID>0</ScriptID>
+					<DataCollector></DataCollector>
+					<Category>5</Category>
+					<TicketCategory>136</TicketCategory>
+				</Table>
+			</NewDataSet>
+			<Contact>
+				<NewDataSet>
+					<Table>
+						<ContactID>1</ContactID>
+						<LocationID>0</LocationID>
+						<ClientID>0</ClientID>
+						<Firstname>Monitor</Firstname>
+						<LastName>Alerts</LastName>
+						<Address1></Address1>
+						<Address2></Address2>
+						<City></City>
+						<State></State>
+						<Zip></Zip>
+						<Phone></Phone>
+						<Cell></Cell>
+						<Fax></Fax>
+						<Pager></Pager>
+						<Email>core@run-biz.com</Email>
+						<Emailpassword></Emailpassword>
+						<MSN></MSN>
+						<AIM></AIM>
+						<ICQ></ICQ>
+						<NetBiosName></NetBiosName>
+						<Last_Date>2014-10-29T03:10:25-05:00</Last_Date>
+						<Last_User>root@localhost</Last_User>
+						<ExternalID>0</ExternalID>
+						<GUID></GUID>
+						<password></password>
+						<WebSecurity>0</WebSecurity>
+						<PWSetFlag>0</PWSetFlag>
+						<ImageId>0</ImageId>
+						<LoginFailCount>0</LoginFailCount>
+						<LoginLockTime>0001-01-01T00:00:00-06:00</LoginLockTime>
+					</Table>
+				</NewDataSet>
+			</Contact>
+		</GroupMonitor>
+		<GroupMonitor>
+			<NewDataSet>
+				<Table>
+					<AgentID>885</AgentID>
+					<GroupID>8</GroupID>
+					<SearchID>0</SearchID>
+					<Name>ShadowProtect - Backup failed – no image file created</Name>
+					<CheckAction>6</CheckAction>
+					<AlertAction>49</AlertAction>
+					<AlertMessage>%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.</AlertMessage>
+					<ContactID>0</ContactID>
+					<interval>3600</interval>
+					<Where>127.0.0.1</Where>
+					<What>6</What>
+					<DataOut>*!!!0!!!*!!!1121!!!*</DataOut>
+					<Comparor>1</Comparor>
+					<DataIn>1</DataIn>
+					<IDField></IDField>
+					<AlertStyle>1</AlertStyle>
+					<ScriptID>0</ScriptID>
+					<DataCollector></DataCollector>
+					<Category>13</Category>
+					<TicketCategory>101</TicketCategory>
+				</Table>
+			</NewDataSet>
+		</GroupMonitor>
+		<GroupMonitor>
+			<NewDataSet>
+				<Table>
+					<AgentID>886</AgentID>
+					<GroupID>8</GroupID>
+					<SearchID>0</SearchID>
+					<Name>ShadowProtect - Backup aborted – no image file created</Name>
+					<CheckAction>6</CheckAction>
+					<AlertAction>49</AlertAction>
+					<AlertMessage>%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.</AlertMessage>
+					<ContactID>0</ContactID>
+					<interval>3600</interval>
+					<Where>127.0.0.1</Where>
+					<What>6</What>
+					<DataOut>*!!!0!!!*!!!1122!!!*</DataOut>
+					<Comparor>1</Comparor>
+					<DataIn>1</DataIn>
+					<IDField></IDField>
+					<AlertStyle>1</AlertStyle>
+					<ScriptID>0</ScriptID>
+					<DataCollector></DataCollector>
+					<Category>13</Category>
+					<TicketCategory>101</TicketCategory>
+				</Table>
+			</NewDataSet>
+		</GroupMonitor>
+		<GroupMonitor>
+			<NewDataSet>
+				<Table>
+					<AgentID>887</AgentID>
+					<GroupID>8</GroupID>
+					<SearchID>739</SearchID>
+					<Name>ImageManager -  Failed collapse</Name>
+					<CheckAction>6</CheckAction>
+					<AlertAction>49</AlertAction>
+					<AlertMessage>%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.</AlertMessage>
+					<ContactID>0</ContactID>
+					<interval>3600</interval>
+					<Where>127.0.0.1</Where>
+					<What>6</What>
+					<DataOut>*!!!0!!!*!!!1121!!!Failed collapse</DataOut>
+					<Comparor>1</Comparor>
+					<DataIn>1</DataIn>
+					<IDField></IDField>
+					<AlertStyle>1</AlertStyle>
+					<ScriptID>0</ScriptID>
+					<DataCollector></DataCollector>
+					<Category>13</Category>
+					<TicketCategory>101</TicketCategory>
+				</Table>
+			</NewDataSet>
+			<Search>
+				<NewDataSet>
+					<Table>
+						<SensID>739</SensID>
+						<Name>Backup - ImageManager</Name>
+						<SQL>Select DISTINCT Computers.ComputerID, Clients.Name as `Client Name`, Computers.Name as ComputerName, Computers.Domain, Computers.UserName, Software.`Name` as `Software_Name` from Computers, Clients, Software Where Computers.ClientID = Clients.ClientID and Software.ComputerID = Computers.ComputerID and ((Software.`Name` like '%ImageManager%'))</SQL>
+						<QueryType>4</QueryType>
+						<ListDATA>Related - Software Installed|Name (Software)|Like|%ImageManager%|=||=|^</ListDATA>
+						<FolderID>2</FolderID>
+					</Table>
+				</NewDataSet>
+			</Search>
+		</GroupMonitor>
+		<GroupMonitor>
+			<NewDataSet>
+				<Table>
+					<AgentID>888</AgentID>
+					<GroupID>8</GroupID>
+					<SearchID>739</SearchID>
+					<Name>ImageManager - Data corruption (a file failed to verify)</Name>
+					<CheckAction>6</CheckAction>
+					<AlertAction>49</AlertAction>
+					<AlertMessage>%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.</AlertMessage>
+					<ContactID>0</ContactID>
+					<interval>3600</interval>
+					<Where>127.0.0.1</Where>
+					<What>6</What>
+					<DataOut>*!!!0!!!*!!!1123!!!Data corruption</DataOut>
+					<Comparor>1</Comparor>
+					<DataIn>1</DataIn>
+					<IDField></IDField>
+					<AlertStyle>1</AlertStyle>
+					<ScriptID>0</ScriptID>
+					<DataCollector></DataCollector>
+					<Category>13</Category>
+					<TicketCategory>101</TicketCategory>
+				</Table>
+			</NewDataSet>
+		</GroupMonitor>
+		<GroupMonitor>
+			<NewDataSet>
+				<Table>
+					<AgentID>889</AgentID>
+					<GroupID>8</GroupID>
+					<SearchID>739</SearchID>
+					<Name>ImageManager - Incomplete chain (missing a file)</Name>
+					<CheckAction>6</CheckAction>
+					<AlertAction>49</AlertAction>
+					<AlertMessage>%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.</AlertMessage>
+					<ContactID>0</ContactID>
+					<interval>3600</interval>
+					<Where>127.0.0.1</Where>
+					<What>6</What>
+					<DataOut>*!!!0!!!*!!!1124!!!Incomplete chain</DataOut>
+					<Comparor>1</Comparor>
+					<DataIn>1</DataIn>
+					<IDField></IDField>
+					<AlertStyle>1</AlertStyle>
+					<ScriptID>0</ScriptID>
+					<DataCollector></DataCollector>
+					<Category>13</Category>
+					<TicketCategory>101</TicketCategory>
+				</Table>
+			</NewDataSet>
+		</GroupMonitor>
+		<GroupMonitor>
+			<NewDataSet>
+				<Table>
+					<AgentID>890</AgentID>
+					<GroupID>8</GroupID>
+					<SearchID>739</SearchID>
+					<Name>ImageManager -  Processing error</Name>
+					<CheckAction>6</CheckAction>
+					<AlertAction>49</AlertAction>
+					<AlertMessage>%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.</AlertMessage>
+					<ContactID>0</ContactID>
+					<interval>3600</interval>
+					<Where>127.0.0.1</Where>
+					<What>6</What>
+					<DataOut>*!!!0!!!*!!!1125!!! Processing error</DataOut>
+					<Comparor>1</Comparor>
+					<DataIn>1</DataIn>
+					<IDField></IDField>
+					<AlertStyle>1</AlertStyle>
+					<ScriptID>0</ScriptID>
+					<DataCollector></DataCollector>
+					<Category>13</Category>
+					<TicketCategory>101</TicketCategory>
+				</Table>
+			</NewDataSet>
+		</GroupMonitor>
+		<GroupMonitor>
+			<NewDataSet>
+				<Table>
+					<AgentID>891</AgentID>
+					<GroupID>8</GroupID>
+					<SearchID>739</SearchID>
+					<Name>ImageManager - Replication error</Name>
+					<CheckAction>6</CheckAction>
+					<AlertAction>49</AlertAction>
+					<AlertMessage>%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.</AlertMessage>
+					<ContactID>0</ContactID>
+					<interval>3600</interval>
+					<Where>127.0.0.1</Where>
+					<What>6</What>
+					<DataOut>*!!!0!!!*!!!1126!!!Replication error</DataOut>
+					<Comparor>1</Comparor>
+					<DataIn>1</DataIn>
+					<IDField></IDField>
+					<AlertStyle>1</AlertStyle>
+					<ScriptID>0</ScriptID>
+					<DataCollector></DataCollector>
+					<Category>13</Category>
+					<TicketCategory>101</TicketCategory>
+				</Table>
+			</NewDataSet>
+		</GroupMonitor>
+		<GroupMonitor>
+			<NewDataSet>
+				<Table>
+					<AgentID>892</AgentID>
+					<GroupID>8</GroupID>
+					<SearchID>739</SearchID>
+					<Name>ImageManager - HSR error</Name>
+					<CheckAction>6</CheckAction>
+					<AlertAction>49</AlertAction>
+					<AlertMessage>%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.</AlertMessage>
+					<ContactID>0</ContactID>
+					<interval>3600</interval>
+					<Where>127.0.0.1</Where>
+					<What>6</What>
+					<DataOut>*!!!0!!!*!!!1127!!!HSR error</DataOut>
+					<Comparor>1</Comparor>
+					<DataIn>1</DataIn>
+					<IDField></IDField>
+					<AlertStyle>1</AlertStyle>
+					<ScriptID>0</ScriptID>
+					<DataCollector></DataCollector>
+					<Category>13</Category>
+					<TicketCategory>101</TicketCategory>
+				</Table>
+			</NewDataSet>
+		</GroupMonitor>
+		<GroupMonitor>
+			<NewDataSet>
+				<Table>
+					<AgentID>893</AgentID>
+					<GroupID>8</GroupID>
+					<SearchID>739</SearchID>
+					<Name>ImageManager - Critical error</Name>
+					<CheckAction>6</CheckAction>
+					<AlertAction>49</AlertAction>
+					<AlertMessage>%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.</AlertMessage>
+					<ContactID>0</ContactID>
+					<interval>3600</interval>
+					<Where>127.0.0.1</Where>
+					<What>6</What>
+					<DataOut>*!!!0!!!*!!!1128!!!Critical error</DataOut>
+					<Comparor>1</Comparor>
+					<DataIn>1</DataIn>
+					<IDField></IDField>
+					<AlertStyle>1</AlertStyle>
+					<ScriptID>0</ScriptID>
+					<DataCollector></DataCollector>
+					<Category>13</Category>
+					<TicketCategory>101</TicketCategory>
+				</Table>
+			</NewDataSet>
+		</GroupMonitor>
+		<GroupDMonitor>
+			<NewDataSet>
+				<Table>
+					<GroupDAgentID>111</GroupDAgentID>
+					<GroupID>8</GroupID>
+					<AgentID>9731</AgentID>
+					<AlertAction>3</AlertAction>
+					<ScriptID>0</ScriptID>
+					<ContactID>0</ContactID>
+					<TicketCategory>101</TicketCategory>
+				</Table>
+			</NewDataSet>
+			<Monitor>
+				<NewDataSet>
+					<Table>
+						<AgentID>9731</AgentID>
+						<Name>BU - !Job Running &gt; 8 hrs</Name>
+						<LocID>0</LocID>
+						<ClientID>0</ClientID>
+						<ComputerID>0</ComputerID>
+						<DriveID>844,843,845,8</DriveID>
+						<CheckAction>0</CheckAction>
+						<AlertAction>1</AlertAction>
+						<AlertMessage>%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.|tzcompdisabled=1|priority=3!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.|tzcompdisabled=1|priority=3</AlertMessage>
+						<ContactID>1</ContactID>
+						<interval>3600</interval>
+						<Where>backupstatus</Where>
+						<What>Status</What>
+						<DataOut>lastrundate &lt; DATE_ADD(UTC_TIMESTAMP(),INTERVAL - 8 HOUR)</DataOut>
+						<Comparor>1</Comparor>
+						<DataIn>2</DataIn>
+						<LastScan>2014-10-29T15:09:34-05:00</LastScan>
+						<LastFailed>2012-01-31T09:50:19-06:00</LastFailed>
+						<FailCount>0</FailCount>
+						<IDField>backupstatus.computerid</IDField>
+						<AlertStyle>0</AlertStyle>
+						<Changed>0</Changed>
+						<Last_Date>2014-10-29T15:10:39-05:00</Last_Date>
+						<Last_User>root@localhost</Last_User>
+						<ReportCategory>1</ReportCategory>
+						<TicketCategory>0</TicketCategory>
+						<Flags>0</Flags>
+					</Table>
+				</NewDataSet>
+			</Monitor>
+		</GroupDMonitor>
+		<GroupDMonitor>
+			<NewDataSet>
+				<Table>
+					<GroupDAgentID>112</GroupDAgentID>
+					<GroupID>8</GroupID>
+					<AgentID>9737</AgentID>
+					<AlertAction>3</AlertAction>
+					<ScriptID>0</ScriptID>
+					<ContactID>0</ContactID>
+					<TicketCategory>101</TicketCategory>
+				</Table>
+			</NewDataSet>
+			<Monitor>
+				<NewDataSet>
+					<Table>
+						<AgentID>9737</AgentID>
+						<Name>BU - Backup Failed to Configure Job</Name>
+						<LocID>0</LocID>
+						<ClientID>0</ClientID>
+						<ComputerID>0</ComputerID>
+						<DriveID>844,843,845,8</DriveID>
+						<CheckAction>0</CheckAction>
+						<AlertAction>1</AlertAction>
+						<AlertMessage>%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.|tzcompdisabled=1|priority=3!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.|tzcompdisabled=1|priority=3</AlertMessage>
+						<ContactID>1</ContactID>
+						<interval>3600</interval>
+						<Where>backuplogs</Where>
+						<What>Message</What>
+						<DataOut>eventdate &gt;  DATE_ADD(NOW(),INTERVAL - 1 DAY)</DataOut>
+						<Comparor>10</Comparor>
+						<DataIn>failed to save backup configuration</DataIn>
+						<LastScan>2014-10-29T15:09:34-05:00</LastScan>
+						<LastFailed>2012-01-31T09:55:20-06:00</LastFailed>
+						<FailCount>0</FailCount>
+						<IDField>eventdate</IDField>
+						<AlertStyle>0</AlertStyle>
+						<Changed>0</Changed>
+						<Last_Date>2014-10-29T15:10:39-05:00</Last_Date>
+						<Last_User>root@localhost</Last_User>
+						<ReportCategory>13</ReportCategory>
+						<TicketCategory>0</TicketCategory>
+						<Flags>0</Flags>
+					</Table>
+				</NewDataSet>
+			</Monitor>
+		</GroupDMonitor>
+		<GroupDMonitor>
+			<NewDataSet>
+				<Table>
+					<GroupDAgentID>113</GroupDAgentID>
+					<GroupID>8</GroupID>
+					<AgentID>9738</AgentID>
+					<AlertAction>18</AlertAction>
+					<ScriptID>0</ScriptID>
+					<ContactID>0</ContactID>
+					<TicketCategory>101</TicketCategory>
+				</Table>
+			</NewDataSet>
+			<Monitor>
+				<NewDataSet>
+					<Table>
+						<AgentID>9738</AgentID>
+						<Name>BU - Backup Job Failed</Name>
+						<LocID>0</LocID>
+						<ClientID>0</ClientID>
+						<ComputerID>0</ComputerID>
+						<DriveID>844,843,845,8</DriveID>
+						<CheckAction>0</CheckAction>
+						<AlertAction>1</AlertAction>
+						<AlertMessage>%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.|tzcompdisabled=1|priority=3!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.|tzcompdisabled=1|priority=3</AlertMessage>
+						<ContactID>1</ContactID>
+						<interval>3600</interval>
+						<Where>backuplogs</Where>
+						<What>Status</What>
+						<DataOut>eventdate &gt;  DATE_ADD(NOW(),INTERVAL - 1 HOUR)</DataOut>
+						<Comparor>1</Comparor>
+						<DataIn>2</DataIn>
+						<LastScan>2014-10-29T15:09:34-05:00</LastScan>
+						<LastFailed>2012-01-31T09:55:56-06:00</LastFailed>
+						<FailCount>0</FailCount>
+						<IDField>backuplogs.message</IDField>
+						<AlertStyle>0</AlertStyle>
+						<Changed>0</Changed>
+						<Last_Date>2014-10-29T15:10:39-05:00</Last_Date>
+						<Last_User>root@localhost</Last_User>
+						<ReportCategory>13</ReportCategory>
+						<TicketCategory>0</TicketCategory>
+						<Flags>0</Flags>
+					</Table>
+				</NewDataSet>
+			</Monitor>
+		</GroupDMonitor>
+		<GroupDMonitor>
+			<NewDataSet>
+				<Table>
+					<GroupDAgentID>114</GroupDAgentID>
+					<GroupID>8</GroupID>
+					<AgentID>9739</AgentID>
+					<AlertAction>3</AlertAction>
+					<ScriptID>0</ScriptID>
+					<ContactID>0</ContactID>
+					<TicketCategory>101</TicketCategory>
+				</Table>
+			</NewDataSet>
+			<Monitor>
+				<NewDataSet>
+					<Table>
+						<AgentID>9739</AgentID>
+						<Name>BU - Backup Plugin Failed</Name>
+						<LocID>0</LocID>
+						<ClientID>0</ClientID>
+						<ComputerID>0</ComputerID>
+						<DriveID>844,843,845,8</DriveID>
+						<CheckAction>0</CheckAction>
+						<AlertAction>1</AlertAction>
+						<AlertMessage>%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.|tzcompdisabled=1|priority=3!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.|tzcompdisabled=1|priority=3</AlertMessage>
+						<ContactID>1</ContactID>
+						<interval>86400</interval>
+						<Where>backuplogs</Where>
+						<What>Message</What>
+						<DataOut>1</DataOut>
+						<Comparor>10</Comparor>
+						<DataIn>backup engine not found</DataIn>
+						<LastScan>2014-10-29T03:09:34-05:00</LastScan>
+						<LastFailed>2012-01-31T09:56:22-06:00</LastFailed>
+						<FailCount>0</FailCount>
+						<IDField></IDField>
+						<AlertStyle>2</AlertStyle>
+						<Changed>0</Changed>
+						<Last_Date>2014-10-29T03:11:38-05:00</Last_Date>
+						<Last_User>root@localhost</Last_User>
+						<ReportCategory>13</ReportCategory>
+						<TicketCategory>0</TicketCategory>
+						<Flags>0</Flags>
+					</Table>
+				</NewDataSet>
+			</Monitor>
+		</GroupDMonitor>
+		<GroupDMonitor>
+			<NewDataSet>
+				<Table>
+					<GroupDAgentID>115</GroupDAgentID>
+					<GroupID>8</GroupID>
+					<AgentID>9756</AgentID>
+					<AlertAction>3</AlertAction>
+					<ScriptID>0</ScriptID>
+					<ContactID>0</ContactID>
+					<TicketCategory>101</TicketCategory>
+				</Table>
+			</NewDataSet>
+			<Monitor>
+				<NewDataSet>
+					<Table>
+						<AgentID>9756</AgentID>
+						<Name>BU - Verify Backup Job Failed</Name>
+						<LocID>0</LocID>
+						<ClientID>0</ClientID>
+						<ComputerID>0</ComputerID>
+						<DriveID>844,843,845,8</DriveID>
+						<CheckAction>0</CheckAction>
+						<AlertAction>1</AlertAction>
+						<AlertMessage>%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.|tzcompdisabled=1|priority=3!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.|tzcompdisabled=1|priority=3</AlertMessage>
+						<ContactID>1</ContactID>
+						<interval>86400</interval>
+						<Where>backuplogs</Where>
+						<What>Message</What>
+						<DataOut>eventdate &gt;  DATE_ADD(NOW(),INTERVAL - 1 day)</DataOut>
+						<Comparor>10</Comparor>
+						<DataIn>verify failed</DataIn>
+						<LastScan>2014-10-29T03:09:34-05:00</LastScan>
+						<LastFailed>2012-01-31T10:32:18-06:00</LastFailed>
+						<FailCount>0</FailCount>
+						<IDField></IDField>
+						<AlertStyle>0</AlertStyle>
+						<Changed>0</Changed>
+						<Last_Date>2014-10-29T03:11:38-05:00</Last_Date>
+						<Last_User>root@localhost</Last_User>
+						<ReportCategory>13</ReportCategory>
+						<TicketCategory>0</TicketCategory>
+						<Flags>0</Flags>
+					</Table>
+				</NewDataSet>
+			</Monitor>
+		</GroupDMonitor>
+		<GroupDMonitor>
+			<NewDataSet>
+				<Table>
+					<GroupDAgentID>565</GroupDAgentID>
+					<GroupID>8</GroupID>
+					<AgentID>164260</AgentID>
+					<AlertAction>1</AlertAction>
+					<ScriptID>0</ScriptID>
+					<ContactID>0</ContactID>
+					<TicketCategory>0</TicketCategory>
+				</Table>
+			</NewDataSet>
+			<Monitor>
+				<NewDataSet>
+					<Table>
+						<AgentID>164260</AgentID>
+						<Name>BU - Shadow Protect Expired*</Name>
+						<LocID>0</LocID>
+						<ClientID>0</ClientID>
+						<ComputerID>0</ComputerID>
+						<DriveID>8</DriveID>
+						<CheckAction>0</CheckAction>
+						<AlertAction>1</AlertAction>
+						<AlertMessage>Shadow Protect is Expired on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME%</AlertMessage>
+						<ContactID>1</ContactID>
+						<interval>86400</interval>
+						<Where>computers</Where>
+						<What>computerid</What>
+						<DataOut>computers.flags &amp; 256 = 0 and (Select count(*) from spjobs where computerid = computers.computerid) &gt; 0</DataOut>
+						<Comparor>6</Comparor>
+						<DataIn></DataIn>
+						<LastScan>2014-10-29T13:40:14-05:00</LastScan>
+						<LastFailed>2014-10-29T13:40:14-05:00</LastFailed>
+						<FailCount>0</FailCount>
+						<IDField>Name</IDField>
+						<AlertStyle>1</AlertStyle>
+						<Changed>0</Changed>
+						<Last_Date>2014-10-29T13:56:13-05:00</Last_Date>
+						<Last_User>Admin@runit-lt.run.local</Last_User>
+						<ReportCategory>0</ReportCategory>
+						<TicketCategory>0</TicketCategory>
+						<Flags>0</Flags>
+					</Table>
+				</NewDataSet>
+			</Monitor>
+		</GroupDMonitor>
+		<GroupDMonitor>
+			<NewDataSet>
+				<Table>
+					<GroupDAgentID>567</GroupDAgentID>
+					<GroupID>8</GroupID>
+					<AgentID>164263</AgentID>
+					<AlertAction>3</AlertAction>
+					<ScriptID>0</ScriptID>
+					<ContactID>0</ContactID>
+					<TicketCategory>0</TicketCategory>
+				</Table>
+			</NewDataSet>
+			<Monitor>
+				<NewDataSet>
+					<Table>
+						<AgentID>164263</AgentID>
+						<Name>BU - ShadowProtect Backup Error</Name>
+						<LocID>0</LocID>
+						<ClientID>0</ClientID>
+						<ComputerID>0</ComputerID>
+						<DriveID>8</DriveID>
+						<CheckAction>0</CheckAction>
+						<AlertAction>1</AlertAction>
+						<AlertMessage>%NAME% - %CLIENTNAME%\%COMPUTERNAME%(%ComputerID%) for %FIELDNAME%~~~Found a successful backup in the past 12 hours for drive '%FieldName%' on %Computername% (%ComputerID%)!!!%NAME% - %CLIENTNAME%\%COMPUTERNAME%(%ComputerID%) for %FIELDNAME%~~~There hasn't been a successful backup in the past 12 hours for drive '%FieldName%' on %Computername% (%ComputerID%)</AlertMessage>
+						<ContactID>0</ContactID>
+						<interval>3600</interval>
+						<Where>RAWSQL</Where>
+						<What>RAWSQL</What>
+						<DataOut>SELECT `t`.`Status` AS `TestValue`,  `t`.`Drive` AS `IdentityField`,  `c`.`ComputerID`,  `t`.`StartTime`
+        , `acd`.`NoAlerts`, `acd`.`UpTimeStart`, `acd`.`UpTimeEnd`
+FROM ( SELECT * FROM
+       ( SELECT `ComputerID`, `StartTime`, TRIM(`Source`) AS `Drive`, `Destination`, `Status`, IF(`Status` = 'completed', 100, IF(`Status` = 'failed', 0, 50)) AS Wieght FROM `SpHistory` 
+         WHERE StartTime &gt; NOW() - INTERVAL 12 HOUR 
+         ORDER BY Wieght DESC, EndTime DESC
+       ) AS `x`
+       GROUP BY `x`.ComputerID, `x`.`Drive`
+     ) AS `t`
+LEFT JOIN `Computers` AS `c` ON `c`.`ComputerID` = `t`.`ComputerID`
+LEFT JOIN `AgentComputerData` AS `acd` ON `c`.`ComputerID` = `acd`.`ComputerID` 
+WHERE `t`.`Status` != 'completed'
+  AND `t`.`ComputerID` IN (SELECT `ComputerID` FROM `Tcomp`)</DataOut>
+						<Comparor>0</Comparor>
+						<DataIn></DataIn>
+						<LastScan>2014-10-29T14:37:01-05:00</LastScan>
+						<LastFailed>2014-10-29T14:44:29-05:00</LastFailed>
+						<FailCount>16</FailCount>
+						<IDField></IDField>
+						<AlertStyle>2</AlertStyle>
+						<Changed>0</Changed>
+						<Last_Date>2014-10-29T15:37:01-05:00</Last_Date>
+						<Last_User>Admin@runit-lt.run.local</Last_User>
+						<ReportCategory>9</ReportCategory>
+						<TicketCategory>0</TicketCategory>
+						<Flags>0</Flags>
+					</Table>
+				</NewDataSet>
+			</Monitor>
+		</GroupDMonitor>
+		<GroupScript>
+			<NewDataSet>
+				<Table>
+					<GScriptID>31</GScriptID>
+					<GroupID>8</GroupID>
+					<ScriptID>732</ScriptID>
+					<ScriptType>1</ScriptType>
+					<RunTime>2014-09-23T10:00:00-05:00</RunTime>
+					<Repeat>0</Repeat>
+					<SearchID>0</SearchID>
+					<Parameters>|priority=1</Parameters>
+					<GroupScriptGuid>03820137-22a1-461d-a50b-34c485401f92</GroupScriptGuid>
+					<IncludeSubGroups>1</IncludeSubGroups>
+					<EffectiveStartDate>2014-09-23T15:17:02-05:00</EffectiveStartDate>
+					<DistributionWindowType>0</DistributionWindowType>
+					<DistributionWindowAmount>0</DistributionWindowAmount>
+					<ScheduleType>4</ScheduleType>
+					<Interval>0</Interval>
+					<ScheduleWeekofMonth>0</ScheduleWeekofMonth>
+					<ScheduleDayofWeek>254</ScheduleDayofWeek>
+					<RepeatType>0</RepeatType>
+					<RepeatAmount>0</RepeatAmount>
+					<RepeatStopAfter>0</RepeatStopAfter>
+					<SkipOffline>0</SkipOffline>
+					<OfflineOnly>0</OfflineOnly>
+					<WakeOffline>0</WakeOffline>
+					<WakeScript>0</WakeScript>
+					<DisableTimeZone>1</DisableTimeZone>
+					<RunScriptOnProbe>0</RunScriptOnProbe>
+					<Priority>5</Priority>
+					<Last_User></Last_User>
+					<Last_Date>0001-01-01T00:00:00-06:00</Last_Date>
+				</Table>
+			</NewDataSet>
+		</GroupScript>
+	</Group>
+</LabTech_Expansion>

@@ -1,0 +1,45 @@
+﻿<LabTech_Expansion
+	Version="60.276"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5937</ScriptId>
+				<FolderId>218</FolderId>
+				<ScriptName>Combined Warranty Information</ScriptName>
+				<ScriptNotes></ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMfPauLWXY9Sl9Ul/liktfp7v1Rurezey89eHT/4aP93fTlF4/vei88fj2ti1X7k3ndFNUSkMMP9PvP18XsKN/5dP/hg3v3t/cODvLt3d18f/tg/8F0e2dn9+Fs9+Dh/nSam/f5hcd3/fH8xsn/AxTOuB7fAAAA</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/ntbFqn2atdnRb5ykqf7d8B/05+m7ts7w7bMiL2dNetd88TKrs0Xe5rX32edlNcnK5uhl1s7fVM+KMj9bPn/z2cj9/eXy+CJftp89vmva6qvS7U8SuKJaHu0+vht+ELT6fF3MjvKdT/cfPrh3f3vv4CDf3t3N97cP9h9Mt3d2dh/Odg8e7k+nuYHCL/Do9IPGH+vrNl9ZPI6nrSKgv+nnz9ZL/vtshu+8v3xy7HbIs9f5+17n7/3O3/fd36+ruj3aIXzxUz87qZZtsVzn+Nz+rt992TwvFgW/Yn7Vb86WM6J4xoOhb/0/fZI4Kmwgy94mstx7OEyYo0c0k8X59bOqnOX147v66c9fYu3ubyDW735VLGdF/bv/vmXbXE5/31U2fZtd5M3v2wjzxskHfPW3gIxHj06Xswj173Gz21J395um7r2fTere/8ap+4HMuff/KfK9D3O+vBX5fnaZ897/l6i7t0lNPsvISM7StkqndZ61eTrErGrH0nOm2jg9fVfQOC9S+Xx8ayZ+HzLv/3+JzLub6PwN2+n73zRh9n82CbPZTsfl8ZvVhp9+0/T6WTXVm+n1tLpallU2E+A/K+R68LNIrm+cXHs7OxvI9XsiFGhtaPB7DlgLr5lGDKZlx368JyUPvmlK/mxqsFsaipkyYHpSLSbFMp99N6vrbNlej1fNbrqqriiEmudlmYqB/uGYiof/XyL0D9NU7O5805T5MFvxDeq+9PTF058VZtr9xoOPn0N78Spv1/XyVd6sy5+lWGP3Gw82fjbJtbfJXDwYsA/WK36TL1a/r1V47TtjgLthhuAmtP9aIcbu/6diDGB7cwAH4sWI9w2z4/+3woYbvOMXT38IAvyNxxM/mwJ8k42g3PEka8jda/L6Z4nD/j8VT3z6YJN/7Cuq3/Nnh1pBOPFNUOvnVh5/KBx28P8lDtsYOBh9n54tz6t6wd2nwm8ST7TzPJ0pSX/Xnx1qfuPRwS2oaf4Gtxz9xsn/A5wwFv34GgAA</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>e0649735-288e-11e4-847c-0019d1894cce</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>218</FolderID>
+					<ParentID>214</ParentID>
+					<Name>Warranty</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>214</FolderID>
+					<ParentID>0</ParentID>
+					<Name>*Packages</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

@@ -1,0 +1,37 @@
+﻿<LabTech_Expansion
+	Version="60.262"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5836</ScriptId>
+				<FolderId>47</FolderId>
+				<ScriptName>Veeam Backup Registry Setup</ScriptName>
+				<ScriptNotes>This script creates the Crimson Eventlog Entry to Retrieve Veeam Stats.
+This script will RESTART THE LT AGENT!</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMffVEtZ9n1KP1Otlxn9XW68+ko3dvZ3U/vP9q//2h3Nz3+4vFdr/3j19O6WLU/mddNUS0BOPxAv/98XcyO8vsP9s73HubbDz59+On27m5+b/vg4fn97Z2dvfsPd2b3s/18at7nFx7f9YfzGyf/D7gRIOPeAAAA</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/ntbFqn2atdnRb5ykqf7d8B/05+m7ts7w7bMiL2dNetd88TKrs0Xe5rX32edlNclK7wMB9pPUqKiWR7uP74YfBK0+Xxezo/z+g73zvYf59oNPH366vbub39s+eHh+f3tnZ+/+w53Z/Ww/nxoo/ALjrB80/ghet/nKjuJ42ioC+pt+/my95L/PZvjO+8sf5G5n0Hudv+91/t7v/H3fo0dVt0c7hC9+6mcn1bItluscn9vf9bsvm+fFouBXzK/6zdlyli/bjAdD3/p/+iRxVNhAlr1NZLn3cJgwR6/zNn2VXxRNW1+nP5mV6zw9r+r0pC4WTbVMTy8JqbK6aNKPfzLPs0X6JJu+Xa8+fnxX3/85Juve/s8dXXc3MNzRL/7dt7/9ez3/4vd9/eWzN989fnX6+363uvp0/97ei2qW/77Ps8mbfDr/fV/n9WUxzX9fpTYT+2SeLZd52Txien8i9N7+3X9JnOJHO4/v6m8fQvnd96f8wUbC7/4sEn7vwQa6fxjRf1+f6AMU39XPOxQHyvrb+1B+7/9LlN+sSh7d20ufFG06nefTtz8rCuLe+xPr/zsK4jb8GVMKP2tKYf/9qf3g54w130Mp3IbQP3xFcP//S9S+QRF8tZplbZ6eLUHSqr7+WVEGn74/wX4OlcHeBnrdPxjgsOdvlEd/ZoDXQBKfZEe/+8mXX7z86s3pq7Onv7u+sh9S0SqH+wE1H7w/NTe7tD+b7Le3SbHu3v9ZYbeD/y8RaH+DeH7DsdDD/y/RZXfvh0eY3Z1vmjJx/RQQwlBKswH/D0DpLD8cEAAA</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>e572f29e-7696-11e3-89f5-002590d5a4ec</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>47</FolderID>
+					<ParentID>0</ParentID>
+					<Name>_System Automation</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

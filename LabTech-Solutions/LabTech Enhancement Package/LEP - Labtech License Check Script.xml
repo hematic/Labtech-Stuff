@@ -1,0 +1,45 @@
+﻿<LabTech_Expansion
+	Version="60.276"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5930</ScriptId>
+				<FolderId>217</FolderId>
+				<ScriptName>LEP - Labtech License Check Script</ScriptName>
+				<ScriptNotes>Script tells you if you are almost out of licenses to warn you to buy more.</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMfvVnnzSy7HqUvqst8McnrdOfTUbq3s7uXPni0u/to7356/MXju94bj19P62LV/mReN0W1BOjwA/3+83UxO3ow2b03O9+bbu/uzB5u7+7m+9sPs9lsO9/f3b0/mew82J1m5n1+4fFdf0C/cfL/AJ8jZsXgAAAA</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/ntbFqn2atdnRb5ykqf7d8B/05+m7ts7w7bMiL2dNetd88TKrs0Xe5rX32edlNclK7wMB9pPUqKiWR7uP74YfBK0+XxezoweT3Xuz873p9u7O7OH27m6+v/0wm8228/3d3fuTyc6D3WlmoPALjLN+0PgjeN3mKzuK42mrCOhv+vmz9ZL/PpvhO+8vf5C7nUHvdf6+1/l7v/P3fY8eVd0e7RC++KmfnVTLtliuc3xuf9fvvmyeF4uCXzG/6jdny1m+bDMeDH3r/+mTxFFhA1n2NpHl3sNhwhw9+jxvz5bn1eO7+sHPWzrt7Wwg0+5unEBHr0+fn568SWfXy2xRTKdlQcg1afrs1ZdfpNNqeV5c6It7ISWP3lRtVj4vpvmyyRttc++9qLsr1P3mqHvv/63UPfnyqxdvtr51x5B1sVpDbQ1Q9qsmn30QYff+v0TY3Z0Neu/o92zBZqVS4/ccILMhf5eSv+eaSNl9uUPLo2d1nnfIvb+RvPf+P0XeW2nP9PTF058VDbp/M63ej1Y/mxr0Blp9kbXznxUi3f//EpH2NtGIjUL6WdoR2/RnUig1fBFIJH0O6cPn5/TzBjH/QCp/+k1T+WdTbB9sMje3IRaYKqoTd3cG9OCj59XVe+nBB98MQX84BN3dxLffsHt98E0TZv9nkzA3K72fNevw8Jsm1M+m4ruBUH3p+WZptbvz/yVi7X+6gVa/u4QZxex3B6Uiuut3Ny6ya9JVY23etL8n/hlT2wGN9q3vHr96cfbi82+lNDnp82zyJp/O0806Tk2YaRSxZb9xwrbMbxEatd84YaPmN4gp7Pvh9H7j0dDuz+L0/jC16e7/t8KZW2uJnzWtuvuNByi30BTm76eSxvt/AKw39p3VEwAA</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>7b13df2c-10d9-11e4-9add-e4115bb071ca</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>217</FolderID>
+					<ParentID>214</ParentID>
+					<Name>LabTech Enhancement</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>214</FolderID>
+					<ParentID>0</ParentID>
+					<Name>*Packages</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

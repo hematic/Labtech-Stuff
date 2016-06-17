@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RMS_INFO" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="POS">
+    <xs:complexType>
+      <xs:attribute name="TOUCH1_CFG" type="xs:string" />
+      <xs:attribute name="TOUCH1_Status" type="xs:string" />
+      <xs:attribute name="TOUCH1_Interface" type="xs:string" />
+      <xs:attribute name="USB_MSR1_CFG" type="xs:string" />
+      <xs:attribute name="USB_PD1_CFG" type="xs:string" />
+      <xs:attribute name="USB_CR1_CFG" type="xs:string" />
+      <xs:attribute name="USB_CR2_CFG" type="xs:string" />
+      <xs:attribute name="COM_PD1_Status" type="xs:string" />
+      <xs:attribute name="Epson_PP" type="xs:string" />
+      <xs:attribute name="COM_PP1_CFG" type="xs:string" />
+      <xs:attribute name="COM_PP2_CFG" type="xs:string" />
+      <xs:attribute name="COM_PP2_Status" type="xs:string" />
+      <xs:attribute name="LPT_PP1_CFG" type="xs:string" />
+      <xs:attribute name="LAN_PP1_CFG" type="xs:string" />
+      <xs:attribute name="WIFI_PP1_CFG" type="xs:string" />
+      <xs:attribute name="WIFI_PP1" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RMS_INFO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="POS" />
+        <xs:element name="System_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SYSTEM" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Manufacturer" type="xs:string" />
+                  <xs:attribute name="ProductName" type="xs:string" />
+                  <xs:attribute name="Version" type="xs:string" />
+                  <xs:attribute name="SerialNumber" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Windows_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Windows" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="OS_Name" type="xs:string" />
+                  <xs:attribute name="Version" type="xs:string" />
+                  <xs:attribute name="ServicePack" type="xs:string" />
+                  <xs:attribute name="Register_UserName" type="xs:string" />
+                  <xs:attribute name="Register_Company_or_Organisimic" type="xs:string" />
+                  <xs:attribute name="SerialNumber" type="xs:string" />
+                  <xs:attribute name="SystemFolder" type="xs:string" />
+                  <xs:attribute name="InstallFolder" type="xs:string" />
+                  <xs:attribute name="TEMPFolder" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CPU_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CPU" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Core_Number" type="xs:string" />
+                  <xs:attribute name="Name" type="xs:string" />
+                  <xs:attribute name="Speed" type="xs:string" />
+                  <xs:attribute name="Identify" type="xs:string" />
+                  <xs:attribute name="Productor" type="xs:string" />
+                  <xs:attribute name="Thread_Count" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Keyboard_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Keyboard" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Name" type="xs:string" />
+                  <xs:attribute name="Identify" type="xs:string" />
+                  <xs:attribute name="NumFun" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Mouse_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mouse" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Name" type="xs:string" />
+                  <xs:attribute name="NumKeys" type="xs:string" />
+                  <xs:attribute name="Whell" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Display_Card_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Display_Card" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Name" type="xs:string" />
+                  <xs:attribute name="Productor" type="xs:string" />
+                  <xs:attribute name="ROMVersion" type="xs:string" />
+                  <xs:attribute name="ROMDate" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Monitor1_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Monitor1" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Device" type="xs:string" />
+                  <xs:attribute name="VREFRESH" type="xs:string" />
+                  <xs:attribute name="Resolution" type="xs:string" />
+                  <xs:attribute name="BLTALIGNMENT" type="xs:string" />
+                  <xs:attribute name="PALETTE" type="xs:string" />
+                  <xs:attribute name="BITSPIXEL" type="xs:string" />
+                  <xs:attribute name="PIXELFORMAT" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Monitor2_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Monitor2" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Device" type="xs:string" />
+                  <xs:attribute name="VREFRESH" type="xs:string" />
+                  <xs:attribute name="Resolution" type="xs:string" />
+                  <xs:attribute name="BLTALIGNMENT" type="xs:string" />
+                  <xs:attribute name="PALETTE" type="xs:string" />
+                  <xs:attribute name="BITSPIXEL" type="xs:string" />
+                  <xs:attribute name="PIXELFORMAT" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Memory_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Memory" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Main_RAM" type="xs:string" />
+                  <xs:attribute name="RAMAvailable" type="xs:string" />
+                  <xs:attribute name="VMemory" type="xs:string" />
+                  <xs:attribute name="VMAvailable" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Physical_COM_Port_and_Parallel_Port_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Port" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Item1" type="xs:string" />
+                  <xs:attribute name="Item2" type="xs:string" />
+                  <xs:attribute name="Item3" type="xs:string" />
+                  <xs:attribute name="Item4" type="xs:string" />
+                  <xs:attribute name="Item5" type="xs:string" />
+                  <xs:attribute name="Item6" type="xs:string" />
+                  <xs:attribute name="Item7" type="xs:string" />
+                  <xs:attribute name="Item8" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Drive_or_Storage_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Drive1" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Type" type="xs:string" />
+                  <xs:attribute name="Signal" type="xs:string" />
+                  <xs:attribute name="Volume_Name" type="xs:string" />
+                  <xs:attribute name="FileSystem" type="xs:string" />
+                  <xs:attribute name="Total" type="xs:string" />
+                  <xs:attribute name="Available" type="xs:string" />
+                  <xs:attribute name="Model" type="xs:string" />
+                  <xs:attribute name="Serial_No" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Network_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Network" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Card_No.21_MAC_Address" type="xs:string" />
+                  <xs:attribute name="Card_No.13_MAC_Address" type="xs:string" />
+                  <xs:attribute name="Computer_Name" type="xs:string" />
+                  <xs:attribute name="Local_IP_Address" type="xs:string" />
+                  <xs:attribute name="Login_User_Name" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Log_Time_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Log" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Date" type="xs:string" />
+                  <xs:attribute name="Time" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Boot_Time_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Boot" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Total_Time" type="xs:string" />
+                  <xs:attribute name="Cumulative_Time" type="xs:string" />
+                  <xs:attribute name="Windows_Time" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Power_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Power" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Type" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POS_Touch1_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="POS" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POS_USB_MSR1_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="POS" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element name="USB_MSR1" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="ModelName" type="xs:string" />
+                  <xs:attribute name="SerialNumber" type="xs:string" />
+                  <xs:attribute name="ManufactureDate" type="xs:string" />
+                  <xs:attribute name="InstallationDate" type="xs:string" />
+                  <xs:attribute name="HoursPowered" type="xs:string" />
+                  <xs:attribute name="CommunicationError" type="xs:string" />
+                  <xs:attribute name="GoodRead" type="xs:string" />
+                  <xs:attribute name="FailedRead" type="xs:string" />
+                  <xs:attribute name="UnreadableCard" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POS_USB_PD1_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="POS" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element name="USB_PD1" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="ModelName" type="xs:string" />
+                  <xs:attribute name="SerialNumber" type="xs:string" />
+                  <xs:attribute name="ManufactureDate" type="xs:string" />
+                  <xs:attribute name="HoursPoweredCount" type="xs:string" />
+                  <xs:attribute name="CommunicationErrorCount" type="xs:string" />
+                  <xs:attribute name="OnlineTransitionCount" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POS_USB_CR1_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="POS" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element name="POS_USB_CR1" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="PID" type="xs:string" />
+                  <xs:attribute name="ModelName" type="xs:string" />
+                  <xs:attribute name="SerialNumber" type="xs:string" />
+                  <xs:attribute name="ManufactureDate" type="xs:string" />
+                  <xs:attribute name="InstallationDate" type="xs:string" />
+                  <xs:attribute name="DrawerGoodOpenCount" type="xs:string" />
+                  <xs:attribute name="DrawerFailedOpenCount" type="xs:string" />
+                  <xs:attribute name="CR_Status" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POS_USB_CR2_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="POS" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element name="POS_USB_CR2" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="PID" type="xs:string" />
+                  <xs:attribute name="ModelName" type="xs:string" />
+                  <xs:attribute name="SerialNumber" type="xs:string" />
+                  <xs:attribute name="ManufactureDate" type="xs:string" />
+                  <xs:attribute name="InstallationDate" type="xs:string" />
+                  <xs:attribute name="DrawerGoodOpenCount" type="xs:string" />
+                  <xs:attribute name="DrawerFailedOpenCount" type="xs:string" />
+                  <xs:attribute name="CR_Status" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POS_COM_PD1_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="POS" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="USB_Device_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="USB_01" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Host_Controller" type="xs:string" />
+                  <xs:attribute name="Device_Connect_Port" type="xs:string" />
+                  <xs:attribute name="Device_VendorID" type="xs:string" />
+                  <xs:attribute name="Device_ProductID" type="xs:string" />
+                  <xs:attribute name="Device_ProductName" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="USB_02" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Host_Controller" type="xs:string" />
+                  <xs:attribute name="Device_Connect_Port" type="xs:string" />
+                  <xs:attribute name="Device_VendorID" type="xs:string" />
+                  <xs:attribute name="Device_ProductID" type="xs:string" />
+                  <xs:attribute name="Device_ProductName" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="USB_03" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Host_Controller" type="xs:string" />
+                  <xs:attribute name="Device_Connect_Port" type="xs:string" />
+                  <xs:attribute name="Device_VendorID" type="xs:string" />
+                  <xs:attribute name="Device_ProductID" type="xs:string" />
+                  <xs:attribute name="Device_ProductName" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="USB_04" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Host_Controller" type="xs:string" />
+                  <xs:attribute name="Device_Connect_Port" type="xs:string" />
+                  <xs:attribute name="Device_VendorID" type="xs:string" />
+                  <xs:attribute name="Device_ProductID" type="xs:string" />
+                  <xs:attribute name="Device_ProductName" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="USB_05" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Host_Controller" type="xs:string" />
+                  <xs:attribute name="Device_Connect_Port" type="xs:string" />
+                  <xs:attribute name="Device_VendorID" type="xs:string" />
+                  <xs:attribute name="Device_ProductID" type="xs:string" />
+                  <xs:attribute name="Device_ProductName" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="USB_06" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Host_Controller" type="xs:string" />
+                  <xs:attribute name="Device_Connect_Port" type="xs:string" />
+                  <xs:attribute name="Device_VendorID" type="xs:string" />
+                  <xs:attribute name="Device_ProductID" type="xs:string" />
+                  <xs:attribute name="Device_ProductName" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="USB_07" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Host_Controller" type="xs:string" />
+                  <xs:attribute name="Device_Connect_Port" type="xs:string" />
+                  <xs:attribute name="Device_VendorID" type="xs:string" />
+                  <xs:attribute name="Device_ProductID" type="xs:string" />
+                  <xs:attribute name="Device_ProductName" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="USB_08" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Host_Controller" type="xs:string" />
+                  <xs:attribute name="Device_Connect_Port" type="xs:string" />
+                  <xs:attribute name="Device_VendorID" type="xs:string" />
+                  <xs:attribute name="Device_ProductID" type="xs:string" />
+                  <xs:attribute name="Device_ProductName" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="USB_09" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Host_Controller" type="xs:string" />
+                  <xs:attribute name="Device_Connect_Port" type="xs:string" />
+                  <xs:attribute name="Device_VendorID" type="xs:string" />
+                  <xs:attribute name="Device_ProductID" type="xs:string" />
+                  <xs:attribute name="Device_ProductName" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="USB_10" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Host_Controller" type="xs:string" />
+                  <xs:attribute name="Device_Connect_Port" type="xs:string" />
+                  <xs:attribute name="Device_VendorID" type="xs:string" />
+                  <xs:attribute name="Device_ProductID" type="xs:string" />
+                  <xs:attribute name="Device_ProductName" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Epson_USB_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="POS" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POS_COM_PP1_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="POS" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element name="COM_PP1" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="ModelName" type="xs:string" />
+                  <xs:attribute name="SerialNumber" type="xs:string" />
+                  <xs:attribute name="MechanicalRevision" type="xs:string" />
+                  <xs:attribute name="FirmwareRevision" type="xs:string" />
+                  <xs:attribute name="InstallationDate" type="xs:string" />
+                  <xs:attribute name="HoursPoweredCount" type="xs:string" />
+                  <xs:attribute name="CommunicationErrorCount" type="xs:string" />
+                  <xs:attribute name="BarcodePrintedCount" type="xs:string" />
+                  <xs:attribute name="MaximumTempReachedCount" type="xs:string" />
+                  <xs:attribute name="NVRAMWriteCount" type="xs:string" />
+                  <xs:attribute name="PaperCutCount" type="xs:string" />
+                  <xs:attribute name="FailedPaperCutCount" type="xs:string" />
+                  <xs:attribute name="PrinterFaultCount" type="xs:string" />
+                  <xs:attribute name="CharacterPrintedCount" type="xs:string" />
+                  <xs:attribute name="CoverOpenCount" type="xs:string" />
+                  <xs:attribute name="ReceiptLineFeedCount" type="xs:string" />
+                  <xs:attribute name="LinePrintedCount" type="xs:string" />
+                  <xs:attribute name="CR_Status" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Installed_Printer_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Printer" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Total" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Printer1" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Name" type="xs:string" />
+                  <xs:attribute name="Color_or_Mono" type="xs:string" />
+                  <xs:attribute name="ConnectPort" type="xs:string" />
+                  <xs:attribute name="Processor" type="xs:string" />
+                  <xs:attribute name="DriverName" type="xs:string" />
+                  <xs:attribute name="Resolution" type="xs:string" />
+                  <xs:attribute name="CR_Status" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Printer2" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Name" type="xs:string" />
+                  <xs:attribute name="Color_or_Mono" type="xs:string" />
+                  <xs:attribute name="ConnectPort" type="xs:string" />
+                  <xs:attribute name="Processor" type="xs:string" />
+                  <xs:attribute name="DriverName" type="xs:string" />
+                  <xs:attribute name="Resolution" type="xs:string" />
+                  <xs:attribute name="CR_Status" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Printer3" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Name" type="xs:string" />
+                  <xs:attribute name="Color_or_Mono" type="xs:string" />
+                  <xs:attribute name="ConnectPort" type="xs:string" />
+                  <xs:attribute name="Processor" type="xs:string" />
+                  <xs:attribute name="DriverName" type="xs:string" />
+                  <xs:attribute name="Resolution" type="xs:string" />
+                  <xs:attribute name="CR_Status" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Printer4" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="Name" type="xs:string" />
+                  <xs:attribute name="Color_or_Mono" type="xs:string" />
+                  <xs:attribute name="ConnectPort" type="xs:string" />
+                  <xs:attribute name="Processor" type="xs:string" />
+                  <xs:attribute name="DriverName" type="xs:string" />
+                  <xs:attribute name="Resolution" type="xs:string" />
+                  <xs:attribute name="CR_Status" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POS_COM_PP2_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="POS" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POS_LPT_PP1_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="POS" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element name="LPT_PP1" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="ModelName" type="xs:string" />
+                  <xs:attribute name="SerialNumber" type="xs:string" />
+                  <xs:attribute name="ManufactureDate" type="xs:string" />
+                  <xs:attribute name="InstallationDate" type="xs:string" />
+                  <xs:attribute name="HoursPoweredCount" type="xs:string" />
+                  <xs:attribute name="CommunicationErrorCount" type="xs:string" />
+                  <xs:attribute name="BarcodePrintedCount" type="xs:string" />
+                  <xs:attribute name="MaximumTempReachedCount" type="xs:string" />
+                  <xs:attribute name="NVRAMWriteCount" type="xs:string" />
+                  <xs:attribute name="PaperCutCount" type="xs:string" />
+                  <xs:attribute name="FailedPaperCutCount" type="xs:string" />
+                  <xs:attribute name="PrinterFaultCount" type="xs:string" />
+                  <xs:attribute name="CharacterPrintedCount" type="xs:string" />
+                  <xs:attribute name="CoverOpenCount" type="xs:string" />
+                  <xs:attribute name="ReceiptLineFeedCount" type="xs:string" />
+                  <xs:attribute name="LinePrintedCount" type="xs:string" />
+                  <xs:attribute name="CR_Status" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POS_LAN_PP1_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="POS" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element name="LAN_PP1" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="ModelName" type="xs:string" />
+                  <xs:attribute name="SerialNumber" type="xs:string" />
+                  <xs:attribute name="FirmwareRevision" type="xs:string" />
+                  <xs:attribute name="HoursPoweredCount" type="xs:string" />
+                  <xs:attribute name="CommunicationErrorCount" type="xs:string" />
+                  <xs:attribute name="CR_Status" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POS_WIFI_PP1_Part">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="POS" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

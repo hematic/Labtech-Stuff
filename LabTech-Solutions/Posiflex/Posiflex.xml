@@ -1,0 +1,42 @@
+﻿<LabTech_Expansion
+	Version="60.262"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5900</ScriptId>
+				<FolderId>190</FolderId>
+				<ScriptName>Posiflex</ScriptName>
+				<ScriptNotes>Script extracts data from xml file created for a Posiflex system and stores the data in the following LabTech database:
+	hpf_posiflex
+	hpf_cashregister
+	hpf_epsonprinter
+	hpf_poledisplay
+	hpf_receiptprinter
+	hpf_stripereader</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMfvZmv62aWXY/S41VdlOn+KN3b2b2X7u4+2n34aG8nffnF47te+8evp3Wxan8yr5uiWgJw+IF+//m6mB3dy2Z7D3YeZtvZ+acPtnd383vbk2z/0+2dnd2Hs92Dh/vTaW7e5xce3/WH8xsn/w+NmwQW3gAAAA==</LicenseData>
+				<ScriptData>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</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>3ad2709a-af67-11e3-ba46-0019d1894cce</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>190</FolderID>
+					<ParentID>0</ParentID>
+					<Name>*Phillip</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

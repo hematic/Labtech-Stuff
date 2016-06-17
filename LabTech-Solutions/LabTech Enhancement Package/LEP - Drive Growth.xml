@@ -1,0 +1,48 @@
+﻿<LabTech_Expansion
+	Version="60.276"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5979</ScriptId>
+				<FolderId>217</FolderId>
+				<ScriptName>LEP - Drive Growth</ScriptName>
+				<ScriptNotes>This script is designed to be run once a month against the LabTech server on the first of the month to update the DriveGrowth table with this months current drive information.
+
+Created by Phillip Marshall
+LabTech Software 2014</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMffTefLfNmll2P0i+nbTXJ63TnYJTu7ezup7t7j+7de7R/P335xeO73juPX0/rYtX+ZF43RbUE8PAD/f7zdTE7mj7I9/bv7+Tb+3k+3d7dzfe3J7s7k+2dnfs79z89ePDpp3sz8z6/8PiuP6TfOPl/ALQvZTLiAAAA</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/ntbFqn2atdnRb5ykqf7d8B/05+m7ts7w7bMiL2dNetd88TKrs0Xe5rX32edlNclK7wMB9pPUqKiWR7uP74YfBK0+Xxezo+mDfG///k6+vZ/n0+3d3Xx/e7K7M9ne2bm/c//Tgweffro3M1D4BcZZP2j8Ebxu85UdxfG0VQT0N/382XrJf5/N8J33lz/I3c6g9zp/3+v8vd/5+75Hj6puj3YIX/zUz06qZVss1zk+t7/rd182z4tFwa+YX/Wbs+UsX7YZD4a+9f/0SeKosIEse5vIcu/hMGGOHr2sVusya/P0TTYp88d39fOft+Ta20St49msWF6k7bxo0gWhPv+4SYvleVUvGJO0rei7PH1aF5f553V11c7TFmQd0/OzQtrdx3e/WdLu/SyS9tMHG0h79uL16as36dmLN1+mM9DvQuj3Gydbr0+fn568SV989fz5iL9qxn/AtFqs1qS7itkfMDK/08dL0mh/gG3EPzstpmVBo8OHb16dfbFlmpZ5S9//AXfsu03xAw/SeZ3TX6lB5enxm9Pf/9mXr744frP14svvbt0Zffy7/z6/++LjO3dGO79x8uzVl1+k0nnzB/zGyfPTZ2/S73x59iL9A04MHvTxly/SyGDSz1IfWe+L73779NVpCrTSX3jRHqY76fGLp+kfcF6UeXPdtPniD0hffAkCplsfT2fnzcejj2eX8nP9dsk/5/xv/q7d//gOv70omgYM/dnOnZ8V9tz7piX/Z5M9b1CUp0SvH4KyvPe+JPu5VJY3kOwkK6dCr9NlW1+nxxc/OzTb//8SzTYamK9WM+qSJFIIll3kpA7K9WKZXhWkDOfVVbrIltdifJq0KmdscOilLC2anzUzc/+bJvDPphxvNDNfvYTuDizM69M36R+Qg95Ebijgl6evzr58+vs/PXv2LN0aVPUjeYdIn/8BPzva89NbUf3/JVT/f4kqePBN0+xnUxXc5JrX62WefkkyjvDtZ4VcB/9fItdGzfk0JxcOmhNSWeSsG/OatGO2TPf2VWH+bOnHh980Gd9DUt+bjBv141NycEk/sgvrK0nxPj01yT7o3v7PCjl3d/6/RM/dTXzZGekHU2b3m6bMvZ9NytzCo/7Z13G733gUcgslZ/5+Kmm5/wd+kiS+pRMAAA==</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>c7e2450e-4eec-11e4-b10b-00505687662d</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>217</FolderID>
+					<ParentID>214</ParentID>
+					<Name>LabTech Enhancement</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>214</FolderID>
+					<ParentID>0</ParentID>
+					<Name>*Packages</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

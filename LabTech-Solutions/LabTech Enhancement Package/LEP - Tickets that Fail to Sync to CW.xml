@@ -1,0 +1,48 @@
+﻿<LabTech_Expansion
+	Version="60.276"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5881</ScriptId>
+				<FolderId>217</FolderId>
+				<ScriptName>LEP - Tickets that Fail to Sync to CW</ScriptName>
+				<ScriptNotes>Creates a ticket that has all tickets that failed to sync to Connectwise in the last 24 hours. Designed to be run daily against the LabTech server.
+
+Tickets are returned in a spreadsheet that has the ticketid, clientname, the failure message, and the creation date.
+</ScriptNotes>
+				<Permission>1,2,4,5,</Permission>
+				<EditPermission>1,4,5,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMffTefLfNmll2P0qf5NF9M8jrdeTBK93Z2d9O9R/d2Hu0cpC+/eHzXe+fx62ldrNqfzOumqJYAHn6g33++LmZH04Pzyafn53vbD/L98+3d3fzedrZ/8On2zs7uw9nuwcP96TQ37/MLj+/6Q/qNk/8HOFY8LuIAAAA=</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/ntbFqn2atdnRb5ykqf7d8B/05+m7ts7w7bMiL2dNetd88TKrs0Xe5rX32edlNclK7wMB9pPUqKiWR7t7Dx8+eLDz6e7O47vhN0Hzz9fF7Gh6cD759Px8b/tBvn++vbub39vO9g8+3d7Z2X042z14uD+d5gYKv8DI6weNP5TXbb6ywzmetozJ47v6m37+bL3kv89m+M77yx/tbmf0e52/73X+3u/8fd8jTFW3RyADfupnJ9WyLZbrHJ/b3/W7L5vnxaLgV8yv+s3ZcpYv24wHQ9/6f/okcVTYQJa9DWT59MEwXY5enz4/PXmTfnxSFtR7+oI44+NR+vGbYvo2b8+e4vdnWVHms/SLvGmyC+/b9KTOGd2UuCz/OP2Nk69enH35Ij1+/vw3ThTudLwkiOkoPR+3/FIx4z/KrGnPCe66zhcClz5ux02b1W0+mxG89OzFmy/TL7968+zs+Wn60emj3/f3ff7m9Tyr89/395X+X18vp7/v7/tMoDTjaXOZfoTBPTs7ff70dfrm9NUXZy+O35w+TZ/8PunHo4/TL1++IfwIvd8nPX1x8vzL1/rVRx/jtednL057b/2+S/7u2asvv0hX5fqiWP7+06vfX4by++sAmvR8lE6Zfk06pWHwt03a4s3vfvv01ak/+s9omPaP4xdP6U95l7+buj/oOwAApbK2zRerNv2FF+1h+pSQ+/2Pnz7devHld7fujECn01c/efw83U739tNvf/nVqzsK16fmbV9Fl1++enr6iocfn+jj1yeHv3Hy+K6y0M9bwdr/dINg/e5mIn/3OKGoQbVYrUkNuyZ7Ie2O2rxpf0/8M6a22uZeSM+jp8SE16nK6BtlvVf5iqiob+yHFD96nefaMD2pFguI/XlVp8dtm03n+HOsL94Ppmb3/0tTs7ezt2lujAAOzc3uwIQIjYjQBYn3PE/LomnT6jw9F/Kr5Bv6daeKdJhRYZ4G8xVYfMY6MrInE/H/jYnY/fTehom4NUW+WS1z7+eAguZv9df+H1QbI9e+CQAA</ScriptData>
+				<ScriptVersion>1299770610</ScriptVersion>
+				<ScriptGuid>c8fb6ff2-7e4f-11e3-a486-0019d1894cce</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>217</FolderID>
+					<ParentID>214</ParentID>
+					<Name>LabTech Enhancement</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>214</FolderID>
+					<ParentID>0</ParentID>
+					<Name>*Packages</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

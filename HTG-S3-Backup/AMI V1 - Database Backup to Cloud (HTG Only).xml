@@ -1,0 +1,99 @@
+﻿<LabTech_Expansion
+	Version="100.334"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5949</ScriptId>
+				<FolderId>152</FolderId>
+				<ScriptName>AMI V1 - Database Backup to Cloud (HTG Only)</ScriptName>
+				<ScriptNotes>Puts backups in S3</ScriptNotes>
+				<Permission>19,45,</Permission>
+				<EditPermission>19,45,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMfPauLWXY9Sp/m03wxyet0Z2+U7u3s7qYHj+7vPNq9l7784vFd74XHr6d1sWp/Mq+boloCcviBfv/5upgd3ft0urs/Pb+/Pdt9ONne3c3vb2fZp3vbO/nu7nk+23v48P65eZ9feHzXH89vnPw/SVPHCN8AAAA=</LicenseData>
+				<ScriptData>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</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>36c14cf5-d19b-11e5-aa62-0e11fed2995f</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>14</ID>
+					<Form>1</Form>
+					<Name>FriendlyName</Name>
+					<Sort>18</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>0</FType>
+					<Section>3. Monitoring</Section>
+					<UnEditable>0</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill></Fill>
+					<LtGuid>ddcde336-d803-11e1-9213-cacda6d640ba</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>703</ID>
+					<Form>1</Form>
+					<Name>AMI Alerting Email</Name>
+					<Sort>15</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>0</FType>
+					<Section>9. AMI Monitoring</Section>
+					<UnEditable>1</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>Supports multiple email addresses seperated by commas. The email addresses listed here will receive alerts as a part of AMI Monitoring. Change this value by running the "Change AMI Alerting Email(s)" script.</Fill>
+					<LtGuid>516a20dd-66bf-11e5-8a29-0e2f2ff98ebf</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>75</ID>
+					<Form>1</Form>
+					<Name>LabTech CDKey</Name>
+					<Sort>5</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>0</FType>
+					<Section>2. Server Stats</Section>
+					<UnEditable>1</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill></Fill>
+					<LtGuid>0c735404-e630-11e1-ae91-4925dce2d893</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>152</FolderID>
+					<ParentID>0</ParentID>
+					<Name>AMI Monitoring V1</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

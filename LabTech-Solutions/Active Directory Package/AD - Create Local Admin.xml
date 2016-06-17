@@ -1,0 +1,48 @@
+﻿<LabTech_Expansion
+	Version="60.276"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5982</ScriptId>
+				<FolderId>206</FolderId>
+				<ScriptName>Create local admin</ScriptName>
+				<ScriptNotes>Script will check if a specific local account exists. If it does not, it will create it and make it an administrator.
+
+Created by Phillip Marshall and Brian Ojeda
+Labtech Software 2014</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMffTefLfNmll2P0i+nbTXJ63T3/ijd29ndTx88uv/po3ufpi+/eHzXe+Xx62ldrNqfzOumqJaAHX6g33++LmZHD84fPpx+ev/B9v397NPt3d18f3tycHCw/en0071PZ/fyWb63b97nFx7f9Uf0Gyf/D7ESX9vhAAAA</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/ntbFqn2atdnRb5ykqf7d8B/05+m7ts7w7bMiL2dNetd88TKrs0Xe5rX32edlNcnK5mjd5PWSvv1stMqa5qqqZ589vmu+1LbSz0/S+0W1PNp9fDf8IGj1+bqYHT04f/hw+un9B9v397NPt3d38/3tycHBwfan00/3Pp3dy2f53r6Bwi/wcPSDxh/c6zZfWTyOp60ioL/p58/WS/77bIbvvL/88e926LHX+fte5+/9zt/33d+vq7o92iF88VM/O6mWbbFc5/jc/q7ffdk8LxYFv2J+1W/OlrN82WY8GPrW/9MniaPCBrLsbSLLvYfDhDl6dDLPp2/TZ1WdfkXs8Piufv7zmFz3N5Dre8dPX599/9Gj03dF0zZbH3+3WL548+ju3fHd39NI0+/58Z1vnopEvd1vmop7P4tU3NvEc0+rvGFuSx3R0hwUTatl2s6LJl1k03mxzNPP0t99VV2RspnnZVnnzbpsf/efFeru/X+Jug92NlD3tgRDD/pbQLijZ6T+c/3uXkhEUhd1nrW5ryv2N9L13v+X6Lq7iW2/YRuy/16EuQVh7v1sEmazDTl98TT9IdiR+980yX527chms9uTo2+WVp/+f4lWG60FU6pYXqTr0GKMx+OfFco9+KYp901orEEu+3QD5ZwhGOfv8nR7Wi0W2XKWfvS7NZ9tbYkrYz2Y352+Xa1bIe7v/vGdsXDo1sdg0Y9HH/v+zZ3D360Zv87blxo2bH38e5oIgr7Fl01OhDqvtu4cbu7n7vFsUSzJ8tdZW9XN6KKu1ivqPJvNnHPluh4xMncOP/pZmfmD/y/N/EaZua0P8IEEe/j/G4Kx9YKSKc7TKSsc8kSJn9/ms58tPbO78x7U+zmn3v97w6IfxUU/myK++6PAyFBuc2AkCKfPsqLMZ7cKjXbfIzb6uSftRs59vZ5O86b5XX3GJW5dVldplpbVNCvTzDf0P0sa9RuPqX42CfrDDDZ3v/HQ6ec62vxZDp92/18WP30QwWKq6Rsm1zceNP2chZtvYGZnxWzZsv+XPtr62aHY/6eCjVtI5A+Byb7xcOMWTGb+fiorb/8PMIlUMIgbAAA=</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>7f99c657-54a6-11e4-b888-6c626d3ede24</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>206</FolderID>
+					<ParentID>190</ParentID>
+					<Name>One Off For Clients</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>190</FolderID>
+					<ParentID>0</ParentID>
+					<Name>*Phillip</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

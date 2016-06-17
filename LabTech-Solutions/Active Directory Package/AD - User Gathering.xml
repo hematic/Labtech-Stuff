@@ -1,0 +1,47 @@
+﻿<LabTech_Expansion
+	Version="60.276"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5942</ScriptId>
+				<FolderId>215</FolderId>
+				<ScriptName>AD - User Gathering</ScriptName>
+				<ScriptNotes>This script pulls back information for users from AD and stores it in the AD_users table.
+
+This script does not support 2003 Servers,</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMfvV4vZ9n1KD1eX6ybNt3bH6V7O7v76f6jnYeP9vbSl188vus1f/x6Wher9ifzuimqJeCGH+j3n6+L2dGn+YOH2b39g+29yezT7d3dfH97srN3b3tnZ/fhbPfg4f50mpv3+YXHd/3R/MbJ/wMKmRCs3QAAAA==</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/ntbFqn2atdnRb5ykqf7d8B/05+m7ts7w7bMiL2dNetd88TKrs0Xe5rX32edlNcnK5uhl1s7fVM+KMv9yeXyRL9vPRu6js+XzN589vmva6qvS7U8SuKJaHu0+vht+ELT6fF3Mjj7NHzzM7u0fbO9NZp9u7+7m+9uTnb172zs7uw9nuwcP96fT3EDhF3h0+kHjj/V1m68sHsfTVhHQ3/TzZ+sl/302w3feXz45djvk2ev8fa/z937n7/vu79dV3R7tEL74qZ+dVMu2WK5zfG5/1+++bJ4Xi4JfMb/qN2fLGc1AxoOhb/0/fZI4Kmwgy94mstx7OEyYo0c0k8X59bOqnOX147v66c9fYu3ubyDW735VLGdF/bv/vmXbXE5/31U2fZtd5M3v2wjzxskHfPW3gIxHj06Xswj173Gz21J395um7t7PJnXvf+PU/UDm3Pv/FPn+v8ac9/6/RN29TWryWUYWcpa2VTqt86zN0xuonZ4z1cbp6buCxnmRCk7jWzPx+5B5//9LZN7dROdv2E7f/6YJc+9nkzCb7XRcHr9ZbfjpN02vn1VTvZleT6urZVllM7i2PyvEevCzSqxvmlgbTcfv2QsMfs+vYS4iFH8/c3HwTVP0Z1OP7e3s3I6iiKuGyDlM+A6B35M3H/5/iZL/n+DN3Z0fLkk/jKS39GUMVdJ2nqcvqysK6ud5WabixPxwnJfd/29FMD9E72X3Gw9Ofi7dlxdPf9Yt8u43Hm/83Pkvj16tlzIRPzuk+sZjhp9dUt1/PwuRfvy7T6vFak1p0GL2u3+c0t+zapEVy9/9458dcn7jkcbPqhK7UVR/lpnv/09xxud5+ypv1uU3nKCytPr/UZgxffT7ImtSXTWaNTl++lWT12fL82rcvhvgNWQ49beA544evai+vjd38E1T9WdTXvd2NhD1wQDZbkfsLlFDVn5Pov5/K+q4UQn+LEs2ZnWYXF+HXD+rkr2ZXK9/4vnZktjrZ8dg7H3jMcLPJqk+fbCBUk9Pn5++OU2fvfryizSb/f7rBgu13/326avT1Hks6Wep77+kxy+epuK/4Bv1ZH52KP2Nxxw/mzK8kdK/pwrv7/mzQ6hvPNYICfXNEmpjPkDplBYswJQZKJaUG0BKYJa12SRr8h9OJmDvG49JfjZJ+sPMBOx94+HFz2UmYDn7WbYW/38ILwy1Aif3G6bT/6dCi40qjHOXr73cZXreXbCt1i3Z0/ScPv4hqbODb5q8/79RZ994oPBzqc5ePP3ZkFEl1b2fiyDB/P2UzP/Rb5z8P5O4eO6LKAAA</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>6e79a348-2bd6-11e4-b023-0019d1894cce</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>215</FolderID>
+					<ParentID>214</ParentID>
+					<Name>Active Directory</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>214</FolderID>
+					<ParentID>0</ParentID>
+					<Name>*Packages</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

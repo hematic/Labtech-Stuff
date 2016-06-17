@@ -1,0 +1,45 @@
+﻿<LabTech_Expansion
+	Version="60.276"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5931</ScriptId>
+				<FolderId>215</FolderId>
+				<ScriptName>AD - Find Inactive Users</ScriptName>
+				<ScriptNotes>This script is designed to prompt the user for an age in number of days to check. If 14 is put in, the script will find any user who has not logged in for 14 days and output them to a CSV.</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMffTefLfNmll2P0uP1xbpp072dEf1/dz/d3Xu0t/vo/sP05ReP73qvPH49rYtV+5N53RTVErDDD/T7z9fF7Ojh/r3z8/383vbewaeT7d3dfH/7YP/BdHtnZ/fhbPfg4f50mpv3+YXHd/0R/cbJ/wP8t8ka4QAAAA==</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/ntbFqn2atdnRb5ykqf7d8B/05+m7ts7w7bMiL2dNetd88TKrs0Xe5nVzdHyRP77r/a0tPi+rSVY2R1+u29W6PS/K/LOT3/3e8e9+/+SqWM6qq4Z+K9vmcko/1w29OJ42l6OXWTt/Uz2j1mfL528+8/7+ckkdLdvPHt81kLUjQfknCUJRLY92H98NPwhafb4uZkcP9++dn+/n97b3Dj6dbO/u5vvbB/sPpts7O7sPZ7sHD/en09xA4ReYMvpB49PpdZuvLB7H01YR0N/082frJf99NsN33l8+KXc7pN3r/H2v8/d+5+/77u/XVd0e7RC++KmfnVTLtliuc3xuf9fvvmyeF4uCXzG/6jdnyxlRPOPB0Lf+nz5JHBU2kGVvA1n2Hg7T5egr4o10njXpdF41+TLN6H8XeVoC0bQ6T39P+uv3HKdv5nkKJkuvirJMJ3naZJf5LC2W6e9ZWQ78PdOrOdq01LhhVNOiSVd1Nc2bplhejJWRd3++zEWERe9tmoxHqi+qq2VZZbOfFXLt/n+KdXd2NpDr9wzV2e8Zp5ffTLWcabn3QZTc+6YpufezSMnd3f3bUbJDoi4xd+KkO3r0ar0UzLTBvfei5b3/L9Fy/9NbGpqItB4tsqL8PfHPeFot4rQ6ekYmPD1bZtThZZ5CRTfpdirIps/o3XVtnIL9kKxH+JYUc1ulM9UirI5fVlcEZJ6T8lbNTC3wxawiXJbplIhcV2WZ10ZJ3w/mZ///S/Ozu8nifcOewP1vmjD3fjYJ8z7WJz198fRnxQJ9+k2T7GfTAt1Asq7WCyn1oZR68P8tSt1/PwuT/p70k/6VEAbfDBidD6TiwTdNxZ9V3XVLfvtZk86H3zS1fnZ5biO1Tuo8a/M3xfRt/rMjoLs7G6n1/zZqHWwSUC+O+9mh1TceefxsyuEmH+/od5+WBXVbzH73AS/5dyffjoiZ165J12H+un7gq7xZU2KH/MHf/YSxWFJm6HdPf1/6U/vkDwbcw9c5hecsD2nWttl0viAI6XlVszNYFg0H/YXpUjJHUY9w9/9T4c/ezt6m+RSSDM/n7sAkBnOTPgf5jpmsOQfvkSn93dcrOFf5DII2MEtdwfn/VHD0w3S+d7/xsOTn0Pv2jdXPmnXf/cbjlVsYLPP3U8mD/z/ejSBvFhcAAA==</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>943ff4e3-286b-11e4-847c-0019d1894cce</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters>Age</Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>215</FolderID>
+					<ParentID>214</ParentID>
+					<Name>Active Directory</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>214</FolderID>
+					<ParentID>0</ParentID>
+					<Name>*Packages</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

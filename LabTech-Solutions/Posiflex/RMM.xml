@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='BIG5'?>
+<!-- Copyright (c) Posiflex Technology Inc.  All rights reserved. -->
+<RMS_INFO>
+<System_Part>
+
+<SYSTEM Manufacturer = 'To be filled by O.E.M.' />
+<SYSTEM ProductName = 'To be filled by O.E.M.' />
+<SYSTEM Version = 'To be filled by O.E.M.' />
+<SYSTEM SerialNumber = 'To be filled by O.E.M.' />
+</System_Part>
+
+<Windows_Part>
+<Windows OS_Name = 'Windows 7 or PosReady 7 Professional' />
+<Windows Version = '6.1.7601' />
+<Windows ServicePack = 'Service Pack 1' />
+<Windows Register_UserName = 'test' />
+<Windows Register_Company_or_Organisimic = '' />
+<Windows SerialNumber = '55041-095-0000205-03642' />
+<Windows SystemFolder = 'C:\Windows' />
+<Windows InstallFolder = '' />
+<Windows TEMPFolder = 'TMP=C:\Users\test\AppData\Local\Temp  TEMP=C:\Users\test\AppData\Local\Temp' />
+</Windows_Part>
+
+<CPU_Part>
+<CPU Core_Number = '4' />
+<CPU Name = 'Intel(R) Core(TM) i5-2510E CPU @ 2.50GHz' />
+<CPU Speed = '2494 MHz' />
+<CPU Identify = 'x86 Family 6 Model 42 Stepping 7' />
+<CPU Productor = 'GenuineIntel' />
+
+<CPU Thread_Count = '(2)' />
+</CPU_Part>
+
+<Keyboard_Part>
+<Keyboard Name = 'HID Keyboard Device' />
+<Keyboard Identify = 'US' />
+<Keyboard NumFun = '12' />
+</Keyboard_Part>
+
+
+<Mouse_Part>
+<Mouse Name = 'USB Touchscreen Controller(73AC)' />
+<Mouse NumKeys = '3' />
+<Mouse Whell = 'None' />
+</Mouse_Part>
+
+
+<Display_Card_Part>
+<Display_Card Name = 'Intel(R) HD Graphics Family' />
+<Display_Card Productor = 'Intel Corporation' />
+<Display_Card ROMVersion = '' />
+<Display_Card ROMDate = '04/07/20' />
+</Display_Card_Part>
+
+<Monitor1_Part>
+<Monitor1 Device  = '\\.\DISPLAY1' />
+<Monitor1 VREFRESH = '60' />
+<Monitor1 Resolution = '1024x768' />
+<Monitor1 BLTALIGNMENT = '1' />
+<Monitor1 PALETTE = 'No' />
+<Monitor1 BITSPIXEL = '32' />
+<Monitor1 PIXELFORMAT = 'BGR' />
+</Monitor1_Part>
+
+<Monitor2_Part>
+<Monitor2 Device  = '\\.\DISPLAY3' />
+<Monitor2 VREFRESH = '60' />
+<Monitor2 Resolution = '800x480' />
+<Monitor2 BLTALIGNMENT = '1' />
+<Monitor2 PALETTE = 'No' />
+<Monitor2 BITSPIXEL = '32' />
+<Monitor2 PIXELFORMAT = 'BGR' />
+</Monitor2_Part>
+
+
+<Memory_Part>
+<Memory Main_RAM = '2047 MB' />
+<Memory RAMAvailable = '2047 MB' />
+<Memory VMemory = '2047 MB' />
+<Memory VMAvailable = '1983 MB' />
+
+
+</Memory_Part>
+
+
+
+<Physical_COM_Port_and_Parallel_Port_Part>
+<Port Item1 = 'Printer Port (LPT1)' />
+<Port Item2 = 'Communications Port (COM1)' />
+<Port Item3 = 'Communications Port (COM2)' />
+<Port Item4 = 'Communications Port (COM3)' />
+<Port Item5 = 'Communications Port (COM4)' />
+<Port Item6 = 'Communications Port (COM5)' />
+<Port Item7 = 'Communications Port (COM6)' />
+<Port Item8 = 'Posiflex PP8000 USB Device (COM7)' />
+</Physical_COM_Port_and_Parallel_Port_Part>
+
+
+
+
+<Drive_or_Storage_Part>
+<Drive1 Type = 'Hardisk' />
+<Drive1 Signal = 'C:\' />
+<Drive1 Volume_Name = 'None' />
+<Drive1 FileSystem = 'NTFS' />
+<Drive1 Total = '152425 MB' />
+<Drive1 Available = '127223 MB' />
+<Drive1 Model = 'WDC WD1600BEVT-22A23T0' />
+<Drive1 Serial_No = 'WD-WXG1EB1ZJVF6' />
+
+</Drive_or_Storage_Part>
+
+<Network_Part>
+<Network Card_No.21_MAC_Address = '00-19-17-31-4C-83' />
+<Network Card_No.13_MAC_Address = '24-77-03-7C-9B-4C' />
+
+<Network Computer_Name = 'Posiflex' />
+<Network Local_IP_Address = '10.10.0.117' />
+<Network Login_User_Name = 'test' />
+</Network_Part>
+
+
+<Log_Time_Part>
+<Log Date = '2013/12/12 , Thursday' />
+<Log Time = '15:53:13' />
+</Log_Time_Part>
+
+
+<Boot_Time_Part>
+<Boot Total_Time = '-85' />
+<Boot Cumulative_Time = '357:22' />
+<Boot Windows_Time = '2:31:46-2013/11/27   Wednesday' />
+</Boot_Time_Part>
+
+<Power_Part>
+<Power Type = 'AC Power' />
+</Power_Part>
+
+<POS_Touch1_Part>
+<POS TOUCH1_CFG = '0' />
+<POS TOUCH1_Status = 'Active' />
+<POS TOUCH1_Interface = 'USB' />
+</POS_Touch1_Part>
+
+<POS_USB_MSR1_Part>
+<POS USB_MSR1_CFG = '1' />
+	<USB_MSR1 ModelName = 'USBMSR' />
+	<USB_MSR1 SerialNumber = '9BP0B3' />
+	<USB_MSR1 ManufactureDate = '20100104' />
+	<USB_MSR1 InstallationDate = '20100104' />
+	<USB_MSR1 HoursPowered = '7075' />
+	<USB_MSR1 CommunicationError = '0' />
+	<USB_MSR1 GoodRead = '12795' />
+	<USB_MSR1 FailedRead = '12365' />
+	<USB_MSR1 UnreadableCard = '3266052' />
+</POS_USB_MSR1_Part>
+
+<POS_USB_PD1_Part>
+<POS USB_PD1_CFG = '1' />
+	<USB_PD1 ModelName = 'USBPD' />
+	<USB_PD1 SerialNumber = 'B3DDS9' />
+	<USB_PD1 ManufactureDate = '20110411' />
+	<USB_PD1 HoursPoweredCount = '0' />
+	<USB_PD1 CommunicationErrorCount = '0' />
+	<USB_PD1 OnlineTransitionCount = '0' />
+</POS_USB_PD1_Part>
+
+<POS_USB_CR1_Part>
+<POS USB_CR1_CFG = '1' />
+	<POS_USB_CR1 PID = '0x202' />
+	<POS_USB_CR1 ModelName = 'CR-4XX5II' />
+	<POS_USB_CR1 SerialNumber = 'BBD6N4' />
+	<POS_USB_CR1 ManufactureDate = '20100213' />
+	<POS_USB_CR1 InstallationDate = '20120213' />
+	<POS_USB_CR1 DrawerGoodOpenCount = '259' />
+	<POS_USB_CR1 DrawerFailedOpenCount = '11' />
+	<POS_USB_CR1 CR_Status = 'Close' />
+</POS_USB_CR1_Part>
+
+<POS_USB_CR2_Part>
+<POS USB_CR2_CFG = '1' />
+	<POS_USB_CR2 PID = '0x201' />
+	<POS_USB_CR2 ModelName = 'CR-6006' />
+	<POS_USB_CR2 SerialNumber = 'cr7a0773' />
+	<POS_USB_CR2 ManufactureDate = '20050927' />
+	<POS_USB_CR2 InstallationDate = '20070927' />
+	<POS_USB_CR2 DrawerGoodOpenCount = '99' />
+	<POS_USB_CR2 DrawerFailedOpenCount = '4' />
+	<POS_USB_CR2 CR_Status = 'Close' />
+</POS_USB_CR2_Part>
+
+<POS_COM_PD1_Part>
+<POS COM_PD1_Status = 'Inactive' /> 
+</POS_COM_PD1_Part>
+
+
+<USB_Device_Part>
+<USB_01 Host_Controller = 'HCD1' />
+<USB_01 Device_Connect_Port = '2' />
+<USB_01 Device_VendorID = '0d3a' />
+<USB_01 Device_ProductID = 'a000' />
+<USB_01 Device_ProductName = 'Posiflex_USB_Touch(Rs)' />
+
+<USB_02 Host_Controller = 'HCD1' />
+<USB_02 Device_Connect_Port = '3' />
+<USB_02 Device_VendorID = '0eef' />
+<USB_02 Device_ProductID = '73ac' />
+<USB_02 Device_ProductName = 'Unknown' />
+
+<USB_03 Host_Controller = 'HCD2' />
+<USB_03 Device_Connect_Port = '1' />
+<USB_03 Device_VendorID = '0d3a' />
+<USB_03 Device_ProductID = '0500' />
+<USB_03 Device_ProductName = 'Posiflex_SD1003000US' />
+
+<USB_04 Host_Controller = 'HCD2' />
+<USB_04 Device_Connect_Port = '2' />
+<USB_04 Device_VendorID = '05ba' />
+<USB_04 Device_ProductID = '000a' />
+<USB_04 Device_ProductName = 'Unknown' />
+
+<USB_05 Host_Controller = 'HCD1' />
+<USB_05 Device_Connect_Port = '1' />
+<USB_05 Device_VendorID = '04b3' />
+<USB_05 Device_ProductID = '3025' />
+<USB_05 Device_ProductName = 'Unknown' />
+
+<USB_06 Host_Controller = 'HCD1' />
+<USB_06 Device_Connect_Port = '2' />
+<USB_06 Device_VendorID = '0d3a' />
+<USB_06 Device_ProductID = '0201' />
+<USB_06 Device_ProductName = 'Posiflex_USB_CR1' />
+
+<USB_07 Host_Controller = 'HCD1' />
+<USB_07 Device_Connect_Port = '3' />
+<USB_07 Device_VendorID = '0d3a' />
+<USB_07 Device_ProductID = '0330' />
+<USB_07 Device_ProductName = 'Posiflex_PP8000U' />
+
+<USB_08 Host_Controller = 'HCD1' />
+<USB_08 Device_Connect_Port = '4' />
+<USB_08 Device_VendorID = '0d3a' />
+<USB_08 Device_ProductID = '0200' />
+<USB_08 Device_ProductName = 'Posiflex_USB_PD' />
+
+<USB_09 Host_Controller = 'HCD1' />
+<USB_09 Device_Connect_Port = '5' />
+<USB_09 Device_VendorID = '0d3a' />
+<USB_09 Device_ProductID = '0202' />
+<USB_09 Device_ProductName = 'Posiflex_USB_CR2' />
+
+<USB_10 Host_Controller = 'HCD1' />
+<USB_10 Device_Connect_Port = '6' />
+<USB_10 Device_VendorID = '046d' />
+<USB_10 Device_ProductID = 'c402' />
+<USB_10 Device_ProductName = 'Unknown' />
+
+</USB_Device_Part>
+
+<Epson_USB_Part>
+<POS Epson_PP = 'Inactive' />
+</Epson_USB_Part>
+
+<POS_COM_PP1_Part>
+	<POS COM_PP1_CFG = '1' />
+	<COM_PP1 ModelName = 'PP-6800' />
+	<COM_PP1 SerialNumber = '9A094I' />
+	<COM_PP1 MechanicalRevision = 'B2' />
+	<COM_PP1 FirmwareRevision = '1.0' />
+	<COM_PP1 InstallationDate = '20091130' />
+	<COM_PP1 HoursPoweredCount = '6980' />
+	<COM_PP1 CommunicationErrorCount = '0' />
+	<COM_PP1 BarcodePrintedCount  = '3' />
+	<COM_PP1 MaximumTempReachedCount  = '0' />
+	<COM_PP1 NVRAMWriteCount  = '7' />
+	<COM_PP1 PaperCutCount = '109' />
+	<COM_PP1 FailedPaperCutCount = '0' />
+	<COM_PP1 PrinterFaultCount = '0' />
+	<COM_PP1 CharacterPrintedCount = '22749' />
+	<COM_PP1 CoverOpenCount = '18' />
+	<COM_PP1 ReceiptLineFeedCount = '2103' />
+	<COM_PP1 LinePrintedCount = '2007' />
+	<COM_PP1 CR_Status = 'Close' />
+</POS_COM_PP1_Part>
+
+<Installed_Printer_Part>
+<Printer Total = '4' />
+<Printer1 Name = 'Fax' />
+<Printer1 Color_or_Mono = '?????????' />
+<Printer1 ConnectPort = 'SHRFAX:' />
+<Printer1 Processor = 'winprint' />
+<Printer1 DriverName = 'Microsoft Shared Fax Driver' />
+<Printer1 Resolution = '200 x 200 dpi' />
+<Printer1 CR_Status = 'Not_Detect' />
+
+<Printer2 Name = 'Generic / Text Only' />
+<Printer2 Color_or_Mono = '?????????' />
+<Printer2 ConnectPort = 'LPT3:' />
+<Printer2 Processor = 'winprint' />
+<Printer2 DriverName = 'Generic / Text Only' />
+<Printer2 Resolution = '600 x 600 dpi' />
+<Printer2 CR_Status = 'Not_Detect' />
+
+<Printer3 Name = 'iR C2550' />
+<Printer3 Color_or_Mono = '?????' />
+<Printer3 ConnectPort = 'WSD-1b53bbf0-6a61-42a7-939b-95592a9369d5.0038' />
+<Printer3 Processor = 'winprint' />
+<Printer3 DriverName = 'Canon iR C2380/C2550' />
+<Printer3 Resolution = '600 x 600 dpi' />
+<Printer3 CR_Status = 'Not_Detect' />
+
+<Printer4 Name = 'Microsoft XPS Document Writer' />
+<Printer4 Color_or_Mono = '?????' />
+<Printer4 ConnectPort = 'XPSPort:' />
+<Printer4 Processor = 'winprint' />
+<Printer4 DriverName = 'Microsoft XPS Document Writer' />
+<Printer4 Resolution = '600 x 600 dpi' />
+<Printer4 CR_Status = 'Not_Detect' />
+
+</Installed_Printer_Part>
+
+<POS_COM_PP2_Part>
+	<POS COM_PP2_CFG = '1' />
+	<POS COM_PP2_Status = 'Inactive' />
+</POS_COM_PP2_Part>
+
+<POS_LPT_PP1_Part>
+	<POS LPT_PP1_CFG = '1' />
+	<LPT_PP1 ModelName = 'PP-9000' />
+	<LPT_PP1 SerialNumber = 'CCI8NA' />
+	<LPT_PP1 ManufactureDate = '20130823' />
+	<LPT_PP1 InstallationDate = '20130823' />
+	<LPT_PP1 HoursPoweredCount = '1490' />
+	<LPT_PP1 CommunicationErrorCount = '0' />
+	<LPT_PP1 BarcodePrintedCount  = '0' />
+	<LPT_PP1 MaximumTempReachedCount  = '0' />
+	<LPT_PP1 NVRAMWriteCount  = '0' />
+	<LPT_PP1 PaperCutCount = '8' />
+	<LPT_PP1 FailedPaperCutCount = '0' />
+	<LPT_PP1 PrinterFaultCount = '0' />
+	<LPT_PP1 CharacterPrintedCount = '1881' />
+	<LPT_PP1 CoverOpenCount = '4' />
+	<LPT_PP1 ReceiptLineFeedCount = '80' />
+	<LPT_PP1 LinePrintedCount = '80' />
+	<LPT_PP1 CR_Status = 'Close' />
+</POS_LPT_PP1_Part>
+
+<POS_LAN_PP1_Part>
+	<POS LAN_PP1_CFG = '1' />
+	<LAN_PP1 ModelName = 'PP-9000' />
+	<LAN_PP1 SerialNumber = 'CCI8WF' />
+	<LAN_PP1 FirmwareRevision = '1.5' />
+	<LAN_PP1 HoursPoweredCount = '1819' />
+	<LAN_PP1 CommunicationErrorCount = '0' />
+	<LAN_PP1 CR_Status = 'Close' />
+</POS_LAN_PP1_Part>
+
+<POS_WIFI_PP1_Part>
+	<POS WIFI_PP1_CFG = '1' />
+	<POS WIFI_PP1 = 'Inactive' />
+</POS_WIFI_PP1_Part>
+</RMS_INFO>

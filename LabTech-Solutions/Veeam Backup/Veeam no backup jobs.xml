@@ -1,0 +1,68 @@
+﻿<LabTech_Expansion
+	Version="60.262"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5844</ScriptId>
+				<FolderId>47</FolderId>
+				<ScriptName>Veeam no backup jobs</ScriptName>
+				<ScriptNotes>This script is designed to alert when no backup activity has occured</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMffVEtZ9n1KP1Otlxn9XW6tzOi/+/up/cf7T14tLOTvvzi8V2v/ePX07pYtT+Z101RLQE4/EC//3xdzI72Hny6k51P720f7J4fbO/u5ve2Hz6c3N/e2dm7/3Bndj/bz6fmfX7h8V1/OL9x8v8AUW31J94AAAA=</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/ntbFqn2atdnRb5ykqf7d8B/05+m7ts7w7bMiL2dNetd88TKrs0Xe5rX32edlNclK7wMB9pPUqKiWR7uP74YfBK0+Xxezo70Hn+5k59N72we75wfbu7v5ve2HDyf3t3d29u4/3Jndz/bzqYHCLzDO+kHjj+B1m6/sKI6nrSKgv+nnz9ZL/vtshu+8v/xB7nYGvdf5+17n7/3O3/c9elR1e7RD+OKnfnZSLdtiuc7xuf1dv/uyeV4sCn7F/KrfnC1n+bLNeDD0rf+nTxJHhQ1k2dtElnsPhwlz9Ohknk/fpsV5+pN5ni3S3yu/TvN3RdM+vqstfo4Jt7f/c0e53Q0sdfSLf/ftb/9ez7/4fV9/+ezNd49fnf6+362uPt2/t/eimuW/7/Ns8iafzn/f13l9WUzz3/ekLhZNtTy9JExP5tlymZfNI6b4J0+y6dv1avt3/yVxioOt9bc45ZXyNJN1nrX5769d6Vv7G+dj9/3n42DjdOz+v2c6vsEp2PlZnIK995+CBz93U7BZl/zEOq+vU6ZwWV006XlVy19nT+mPulqIkvlZUS333p+OP4eqZW9nAx13jch3+fD16fPTkzdpDpIWs/TZqy+/SHNL7e9++/TVadpU63qap8/Pfq/T9KPfnen9u3+UHr94Kq+h5bgtFvlFvkx/4UV7mD49fnP6+x8/fbr14svvbt0ZpWcv3py++snj5+n23n767S+/enWH355Wi9WanIWzp+ln6e9u/ipmv3tcNo7Oq/Vy9tPVhKZeW9x7r/ncH5jP3a9rY3825WJvk1i8medqXHMrCyBOmtX5o9/To9Pv+bMiGPffXzB+7gj5YJNc9FnqQ23lcZnXxtPZrKY//X8tFSNU3N3Ej9+wL/zg/1OEucEX7nPFNyuLB+9PrJ9DI7V7cO/2bDQke0cRW9GxBK7JkgJS06gjjzDw+ptP0YfvT9GfO/a7yUzUeXqFf5aVuE3GUMCPaudFkzbXTZsv0mKZkm2ek6Vvxulx2hbTt3mbzrMmneRk1qfMxrOfFQ7e/Roh3M8dwX+YihBe2/+HKHMrTRgGMt8wJ32NyOfnUhk+2ECv/P6DvfO9h/n2g08ffipJr4OH592k188GEe89fm8ibma6n1Ua/jDFcSiA+NmkjPn7qSRj/x//ZWHSmxUAAA==</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>2760afc3-81f8-11e3-99b5-002590d5a4ec</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<PackedScript>
+			<NewDataSet>
+				<Table>
+					<ScriptId>5836</ScriptId>
+					<FolderId>47</FolderId>
+					<ScriptName>Veeam Backup Registry Setup</ScriptName>
+					<ScriptNotes>This script creates the Crimson Eventlog Entry to Retrieve Veeam Stats.
+This script will RESTART THE LT AGENT!</ScriptNotes>
+					<Permission>0,</Permission>
+					<EditPermission>0,</EditPermission>
+					<ComputerScript>1</ComputerScript>
+					<LocationScript>0</LocationScript>
+					<MaintenanceScript>0</MaintenanceScript>
+					<FunctionScript>0</FunctionScript>
+					<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMffVEtZ9n1KP1Otlxn9XW68+ko3dvZ3U/vP9q//2h3Nz3+4vFdr/3j19O6WLU/mddNUS0BOPxAv/98XcyO8vsP9s73HubbDz59+On27m5+b/vg4fn97Z2dvfsPd2b3s/18at7nFx7f9YfzGyf/D7gRIOPeAAAA</LicenseData>
+					<ScriptData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/ntbFqn2atdnRb5ykqf7d8B/05+m7ts7w7bMiL2dNetd88TKrs0Xe5rX32edlNclK7wMB9pPUqKiWR7uP74YfBK0+Xxezo/z+g73zvYf59oNPH366vbub39s+eHh+f3tnZ+/+w53Z/Ww/nxoo/ALjrB80/ghet/nKjuJ42ioC+pt+/my95L/PZvjO+8sf5G5n0Hudv+91/t7v/H3fo0dVt0c7hC9+6mcn1bItluscn9vf9bsvm+fFouBXzK/6zdlyli/bjAdD3/p/+iRxVNhAlr1NZLn3cJgwR6/zNn2VXxRNW1+nP5mV6zw9r+r0pC4WTbVMTy8JqbK6aNKPfzLPs0X6JJu+Xa8+fnxX3/85Juve/s8dXXc3MNzRL/7dt7/9ez3/4vd9/eWzN989fnX6+363uvp0/97ei2qW/77Ps8mbfDr/fV/n9WUxzX9fpTYT+2SeLZd52Txien8i9N7+3X9JnOJHO4/v6m8fQvnd96f8wUbC7/4sEn7vwQa6fxjRf1+f6AMU39XPOxQHyvrb+1B+7/9LlN+sSh7d20ufFG06nefTtz8rCuLe+xPr/zsK4jb8GVMKP2tKYf/9qf3g54w130Mp3IbQP3xFcP//S9S+QRF8tZplbZ6eLUHSqr7+WVEGn74/wX4OlcHeBnrdPxjgsOdvlEd/ZoDXQBKfZEe/+8mXX7z86s3pq7Onv7u+sh9S0SqH+wE1H7w/NTe7tD+b7Le3SbHu3v9ZYbeD/y8RaH+DeH7DsdDD/y/RZXfvh0eY3Z1vmjJx/RQQwlBKswH/D0DpLD8cEAAA</ScriptData>
+					<ScriptVersion>1</ScriptVersion>
+					<ScriptGuid>e572f29e-7696-11e3-89f5-002590d5a4ec</ScriptGuid>
+					<ScriptFlags>0</ScriptFlags>
+					<Parameters></Parameters>
+				</Table>
+			</NewDataSet>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>47</FolderID>
+						<ParentID>0</ParentID>
+						<Name>_System Automation</Name>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+		</PackedScript>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>47</FolderID>
+					<ParentID>0</ParentID>
+					<Name>_System Automation</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

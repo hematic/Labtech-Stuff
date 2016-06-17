@@ -1,0 +1,36 @@
+﻿<LabTech_Expansion
+	Version="100.332"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5786</ScriptId>
+				<FolderId>194</FolderId>
+				<ScriptName>Transfer Signatures To LTShare</ScriptName>
+				<ScriptNotes>This script transfers all S: Drive user signature folders under email-signatures into LTShare\Transfer\Signatures. Only newer files are transferred.</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMfvZmv62aWXY/SZ/mkXmf1dbr36Sjd29m9n95/dG/v0d6n6csvHt/1Xnn8eloXq/Yn87opqiVghx/o95+vi9nR7OH9yXQ3m25PZrN8e3c3398+yPZn2zs793fuf3rw6c75vZl5n194fNcf0W+c/D+wHVmg4QAAAA==</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/ntbFqn2atdnRb5ykqf7d8B/05+m7ts7w7bMiL2dNetd88TKrs0Xe5rX32edlNclK7wMB9pPUqKiWR7uP74YfBK0+Xxezo9nD+5Ppbjbdnsxm+fbubr6/fZDtz7Z3du7v3P/04NOd83szA4VfYJz1g8Yfwes2X9lRHE9bRUB/08+frZf899kM33l/+YPc7Qx6r/P3vc7f+52/73v0qOr2aIfwxU/97KRatsVyneNz+7t+92XzvFgU/Ir5Vb85W87yZZvxYOhb/0+fJI4KG8iyt4ks9x4OE+bo0at8SVzwurh4Xl08K8r88V395uctwfY20etpXpLIpKs6vyyqdZN++fxp2hQXy6xd13lKkrZszvM6LauL9JyomWZtOn30+z5/83qe1fnv+0a//31fm1ea35feNq/RW+P2XTuuylmaLWdpO8/TvK6ruswv85IBjnvz803Mz+43PT/3fhbnZ/dgg6QfzfIyTqKjk68zDwpr74PIuzdA3t2fn+Q9tSwNKn8jFL73/yUKb1Qwoo+dgrlRudyW6srUaVulG1n9m9X8+///0Sw1z8wA9390e/ZXkn+Uvv87mKaPvhGBuf//JYG5wYU5Xc5+KF7Mp980L38jXszXo5nhNyJZ87NCrAf/XyLWRo18Uq2u09eP0qd1cZmnTj6hSUl88/qSHL5Ncpyek9jm9c8KmQ++aTL/rMrx3sEm/VpNqilo/fv+vt/+iWevf98vsvptTiO4+H2P6/b3zRdZUW5ba0hU/X1/390He+PdB+Pd8e7uRkWafms8bxfp3dfp3d/7y/TuyZcvf59HT4/f0F9P049+/299lN599YhixO8+2t1J75KqffTeijn9hdlidZjm03mV/u7OZf/d091feNEepreHF/WNusYGpJhXTfv7lu26sYzVMQhHr3fW9+4td/aLrL7/8KE2uvde3PXw/19WwtCe5uJnS+3t/n8q1L0pN7Bevnz9s0Ombzzi/Nkk00bzcNy2+WIFPQWDMJP8ACJ3RPGruprmTePyAU7qt1/Kd8/Vtfu6dN5M56HQ82vT+WdVgn92Qs/fVZOL3mcd4n8jLvXu/3+C0JCn83f5dK1MLe4OEZIywMX59XjV7EpeavyzxMD/Pwogf/erYjkr6t/9922uG6Lvvb3f97v0QXXVvKyuiKbzvCx/38vd8c7vu8LfDf4eE+3TAa7fPuV5oZ5eVmUxvU6fXL/MSNdsPzt7fnpjcOmEoj+j30yIufv/txjzZ88a/v8pslTN+ipv1mX7s+Rk/f8nuHxpRT1tGHo6rRYr+BC31afvSbqDb5p0ez+LpHuws0mdssYUPvvdB3SkCXu6sRGHWfGQ6OjRCQWhr9dTcPH52vgc+5vJOhQpfW2y7v4skvW2HCnQnc2nkZwX9YKNPkzZNGspDZLBy52U+SK9Kto5ewn9pPXPDjfv7XzTZP/Z5ObdjXS3KblnFN3nt8/Gvxe9vvGw6+fSJL94+kOwNXvfeAT1s2lrbpn1/dlksaEo6P+V9NookYZaqZBrnL6iDOUJMpSL7DqdZ5QNPudvECTZpX/rY3Nc1IzTk3k+fZu6xJ7mCpESaHNKHXIz0qf+m5wwHqen7woOwmRwcR36wRP2/60Ia9OMdUb6wZQZCmD+30mZGwOYH4b0//8pkjmJ+YHfML0+PJL5IdJro7a0yvEqa9LGki09r6uFWz6TNbP5QFbiZ3OlDGtP3yxr/qxK8w9Tz33jwcstKGP+fpq12dFvnPw/nryMfsYqAAA=</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>d95bc1ac-bdde-11e4-8a4d-005056860f3d</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>194</FolderID>
+					<ParentID>0</ParentID>
+					<Name>Infrastructure</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

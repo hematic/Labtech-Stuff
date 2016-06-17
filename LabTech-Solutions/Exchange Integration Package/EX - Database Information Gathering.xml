@@ -1,0 +1,73 @@
+﻿<LabTech_Expansion
+	Version="60.276"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5974</ScriptId>
+				<FolderId>193</FolderId>
+				<ScriptName>Exchange Database Information Gathering</ScriptName>
+				<ScriptNotes></ScriptNotes>
+				<Permission>1,2,4,5,</Permission>
+				<EditPermission>1,4,5,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMffTefLfNmll2P0qf5NF9M8jrdeTBK93Z2d9O9R/d2Hu0cpC+/eHzXe+fx62ldrNqfzOumqJYAHn6g33++LmZH5/c/fbiX7+9t783OH27v7ub72w+zTx9u7+zsPpztHjzcn05z8z6/8PiuP6TfOPl/AEDJTgDiAAAA</LicenseData>
+				<ScriptData>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</ScriptData>
+				<ScriptVersion>1299770610</ScriptVersion>
+				<ScriptGuid>f5692e42-2df9-11e4-9a69-0019d1894cce</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<File
+			Name="L:\Transfer\Software\Exchange\Exchange Database Information Gathering.ps1"
+			Bytes="77u/IyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIw0KI1NjcmlwdCBDcmVhdGVkIGJ5IFBoaWxsaXAgTWFyc2hhbGwJCQkJCQkJCQkJCQkJIw0KI0NyZWF0aW9uIERhdGUgNi81LzE0CQkJCQkJCQkJCQkJCQkJCSMNCiNSZXZpc2lvbiAyCQkJCQkJCQkJCQkJCQkJCQkJCSMNCiNSZXZpc2lvbnMgQ2hhbmdlcyAtIEFkZGVkIENvbW1lbnRpbmcgYW5kIGNsZWFuZWQgdXAgZm9ybWF0dGluZy4JCQkJCSMNCiMJCQkJCQkJCQkJCQkJCQkJCQkJCQkjDQojRGVzY3JpcHRpb24gLSBUaGlzIHNjcmlwdCB3aWxsIHB1bGwgZXhjaGFuZ2UgbWFpbGJveCBkYXRhYmFzZSBpbmZvcm1hdGlvbgkJCSMNCiNpbmZvcm1hdGlvbiBmcm9tIGEgRXhjaGFuZ2UgMjAxMCBib3ggYW5kIHJldHVybiBpdCBpbnRvIGEgZm9ybWF0IHRoYXQgY2FuIGJlCQkjDQojdGhhdCBjYW4gYmUgaW5zZXJ0ZWQgaW50byBhIGN1c3RvbSB0YWJsZSBpbiB0aGUgTGFiVGVjaCBtb25pdG9yaW5nIERhdGFiYXNlLgkJIw0KIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIw0KDQpGdW5jdGlvbiBFeGNoYW5nZURhdGFiYXNlSW5mbw0Kew0KICAgICAgICAjQ3JlYXRlcyB0aGUgdHdvIHNlY3Rpb25zIG9mIHRoZSBNeVNRTCBpbnNlcnQgc3RhdGVtZW50IGZvciB0aGUgTGFiVGVjaCBEYXRhYmFzZS4NCiAgICAgICAgJERhdGFiYXNlSW5zZXJ0ID0gIlJFUExBQ0UgSU5UTyBFeGNoYW5nZURhdGFiYXNlcyAoQWdlbnRJRCxDbGllbnROYW1lLENsaWVudElELERhdGFiYXNlbmFtZSxTZXJ2ZXJuYW1lLFRvdGFsV2hpdGVzcGFjZSxUb3RhbERhdGFiYXNlU2l6ZSkiDQogICAgICAgICREYXRhYmFzZVZhbHVlcyA9ICIiDQogICAgICAgICAgICAgDQogICAgVHJ5DQogICAgew0KICAgICAgICAjQWRkcyAyMDA3IEV4Y2hhbmdlIFNuYXBpbg0KICAgICAgICBBZGQtUFNTbmFwaW4gTWljcm9zb2Z0LkV4Y2hhbmdlLk1hbmFnZW1lbnQuUG93ZXJTaGVsbC5BZG1pbg0KICAgIH0NCiAgICBDYXRjaA0KICAgIHt9DQoNCiAgICAgVHJ5DQogICAgew0KICAgICAgICAjQWRkcyAyMDEwIEV4Y2hhbmdlIFNuYXBpbg0KICAgICAgICBBZGQtUFNTbmFwaW4gTWljcm9zb2Z0LkV4Y2hhbmdlLk1hbmFnZW1lbnQuUG93ZXJTaGVsbC5FMjAxMA0KICAgIH0NCiAgICBDYXRjaA0KICAgIHt9DQoNCiAgICAgICAgI0dldHMgdGhlIGluZm9ybWF0aW9uIGZvciBhbGwgTWFpbGJveGVzIFN0b3Jlcy4NCiAgICAgICAgR2V0LW1haWxib3hkYXRhYmFzZSAtc3RhdHVzIHwgJSB7IA0KCSAgICAgICAgJERhdGFiYXNlbmFtZSA9ICRfLk5hbWUNCgkgICAgICAgICRTcGFjZSA9ICgoR2V0LU1haWxib3hEYXRhYmFzZSAtSWRlbnRpdHkgJERhdGFiYXNlbmFtZSAtU3RhdHVzKS5hdmFpbGFibGVuZXdtYWlsYm94c3BhY2UpLlRvR0IoKQ0KCSAgICAgICAgJFNpemUgPSAoKEdldC1NYWlsYm94RGF0YWJhc2UgLUlkZW50aXR5ICREYXRhYmFzZW5hbWUgLVN0YXR1cykuRGF0YWJhc2VTaXplKS5Ub0dCKCkNCgkgICAgICAgICAgICBJZigkRGF0YWJhc2VWYWx1ZXMgLWVxICIiKQ0KICAgICAgICAgICAgICAgIHsNCgkJICAgICAgICAgICAgJERhdGFiYXNlVmFsdWVzID0gIiBWQUxVRVMoJyVjb21wdXRlcmlkJScsJyVjbGllbnRuYW1lJScsJyVjbGllbnRpZCUnLGAnJERhdGFiYXNlbmFtZWAnLCclY29tcHV0ZXJuYW1lJScsYCckU3BhY2VgJyxgJyRTaXplYCcpIg0KICAgICAgICAgICAgICAgIH0NCgkgICAgICAgICAgICBFbHNlDQogICAgICAgICAgICAgICAgew0KCQkgICAgICAgICAgICAkRGF0YWJhc2VWYWx1ZXMgPSAkRGF0YWJhc2VWYWx1ZXMgKyAiLCgnJWNvbXB1dGVyaWQlJywnJWNsaWVudG5hbWUlJywnJWNsaWVudGlkJScsYCckRGF0YWJhc2VuYW1lYCcsJyVjb21wdXRlcm5hbWUlJyxgJyRTcGFjZWAnLGAnJFNpemVgJykiDQogICAgICAgICAgICAgICAgfQ0KfQ0KICAgICAgICAjT3V0cHV0cyB0aGUgaW5zZXJ0IHN0YXRlbWVudHMgdG8gYSBmaWxlIHRvIGJlIHB1bGxlZCBpbiBWSUEgYSBMYWJUZWNoIFNjcmlwdC4gIA0KICAgICAgICBJRiAoJERhdGFiYXNlVmFsdWVzIC1lcSAiIikgDQogICAgICAgIHsNCiAgICAgICAgICAgICRPdXRwdXQgPSAiTm8gVmFsdWVzIHdlcmUgcmV0cmlldmVkIg0KICAgICAgICAgICAgb3V0LWZpbGUgLWZpbGVwYXRoIEM6XFdpbmRvd3NcdGVtcFxkYXRhYmFzZXN0YXRzLnR4dCAtaW5wdXRvYmplY3QgJE91dHB1dA0KICAgICAgICB9DQogICAgICAgIEVsc2UgDQogICAgICAgIHsNCiAgICAgICAgICAgICRPdXRwdXQgPSAkRGF0YWJhc2VJbnNlcnQgKyAkRGF0YWJhc2VWYWx1ZXMNCiAgICAgICAgICAgIG91dC1maWxlIC1maWxlcGF0aCBDOlxXaW5kb3dzXHRlbXBcZGF0YWJhc2VzdGF0cy50eHQgLWlucHV0b2JqZWN0ICRPdXRwdXQNCiAgICAgICAgfQ0KfQ0KDQpFeGNoYW5nZURhdGFiYXNlSW5mbw==" />
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>370</ID>
+					<Form>1</Form>
+					<Name>Windows Server Roles</Name>
+					<Sort>0</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>0</FType>
+					<Section>Computer Role</Section>
+					<UnEditable>0</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>|Detected Microsoft Windows Roles|0</Fill>
+					<LtGuid>d8f03bf1-2b77-11e1-96ac-e84fd0275224</LtGuid>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>633</ID>
+					<Form>1</Form>
+					<Name>Exchange Server 2013</Name>
+					<Sort>0</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>1</FType>
+					<Section>Axxys Custom Settings</Section>
+					<UnEditable>0</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>Check this box if this is an Exchange 2013 Server</Fill>
+					<LtGuid>5cad3be6-d6c3-11e3-90bb-000c299c1158</LtGuid>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>193</FolderID>
+					<ParentID>0</ParentID>
+					<Name>Service+</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

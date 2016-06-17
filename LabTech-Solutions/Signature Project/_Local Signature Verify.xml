@@ -1,0 +1,36 @@
+﻿<LabTech_Expansion
+	Version="100.332"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5870</ScriptId>
+				<FolderId>211</FolderId>
+				<ScriptName>_Local Signature Verify</ScriptName>
+				<ScriptNotes>Gather signatures from LT Server and get their MD5 hash.</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>1</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMffVEtZ9n1KH2WT+p1Vl+nu5+O0r2d3fvpvUd7u4/u7aUvv3h813vh8etpXazan8zrpqiWgBx+oN9/vi5mR7v5ZCe7f3B/e3IwPd/e3c33t7OH2f72DsG/P9vZ3Xm4Y9/nFx7f9cfzGyf/D95ugGzfAAAA</LicenseData>
+				<ScriptData>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</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>1eb0a585-b8cf-11e4-a9a4-00155d010900</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>211</FolderID>
+					<ParentID>0</ParentID>
+					<Name>Infrastructure</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

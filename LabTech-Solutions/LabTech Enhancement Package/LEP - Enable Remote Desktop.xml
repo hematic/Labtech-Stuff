@@ -1,0 +1,45 @@
+﻿<LabTech_Expansion
+	Version="60.276"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5889</ScriptId>
+				<FolderId>217</FolderId>
+				<ScriptName>LEP - Enable Remote Desktop</ScriptName>
+				<ScriptNotes>This script will enable Remote Desktop on the target Machine.</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMfvVnnzSy7HqWv81WbLyZ5ne7ujNK9nd176f1Hu58+2r2fvvzi8V3vlcevp3Wxan8yr5uiWgJ2+IF+//m6mB2df3qeTWa7+9u72f7e9u5ufm/74WzvfHtnZ/f+/dnOvd2DnXvmfX7h8V1/RL9x8v8Ak+od6+EAAAA=</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/ntbFqn2atdnRb5ykqf7d8B/05+m7ts7w7bMiL2dNetd88TKrs0Xe5rX32edlNcnK5uhl1s7fVM+KMj9bPn/z2cj9/eXy+CJftp89vmva6qvS7U8SuKJaHu0+vht+ELT6fF3Mjs4/Pc8ms9397d1sf297dze/t/1wtne+vbOze//+bOfe7sHOPQOFX+DR6QeNP9bXbb6yeBxPW0VAf9PPn62X/PfZDN95f/nk2O2QZ6/z973O3/udv++7v19XdXu0Q/jip352Ui3bYrnO8bn9Xb/7snleLAp+xfyq35wtZ0TxjAdD3/p/+iRxVNhAlr1NZLn3cJgwR49oJovz62dVOcvrx3f105+/xNrd30Cs3/2qWM6K+nf/fcu2uZz+vqts+ja7yJvftxHmjZMP+OpvARlD0qenL55qu3tod2vy7n7T5N3/2STv/W+cvB/InXv/nyLf/+e4897/l8i7t0lRPsvITM7StkqndZ61eXoDudNzptz4a3LtZrLu/3+KrDsbyLo7wJYfSO4uN5/WdWXM2/tx8P3/L5F6dyMLPzphUr4ppm/z9meFLz/9pon16c8msW7vGHn675sl2IMhgn1dgv2sOkebCfa0ulqWVTZDPPGzQqyD/y8Ra29nk9r7PcNQ7Pcc0IJeM43QTMuOgntPSj78pin5c6jUXq2XP2sct7vzTRPqtgrtaxHq9vL5s6bQdr/xeORnU0hvoNjPKmt945HHzyah9pC0uY02M2oq/d2n1WK1pjzUktJRv/vPDgm/8eji3s8mCTex2svqijJq87ws0zpv1mWbXmVN+ij93Vf2C/n8Z4mS/58KKB5ssqy3pRh60N8Cyh2FjEtzcLrMJohFXj19mb5eT6d505yvy/I6Hk4cPdI2+vX+ZsJ/4+HFzyoLbyL8UCQ3OCHfXIy2+43HHT+b7HurIO1nMUjb/caDjp9Dp0ZNdPrlm2+fvvrZ82oOvmmS/Wwa6xtI9rOeBdj9xsOLn01q7X+6yZpMy4K6LWZDVsRaC9ekq9favGl/T/wzprYDRoNtTLG8YCPz7Pjs+elTymjVHS/KZLc6NuW2b//GiVDIdzEGtfP9YEqh+b/ZKf3ZtFMbNWyHeT+U2fe+8YDn51Cb/qyrhr3/T0U9N1ArdPS+WULtfeOxzc8moTbGNqp0oIvKvCVHuvGc6N/1d/3ZId83HtD8/0ZffeMRx8+hvlIJ/Fnz+/a+8cDiFlLIf9PfT7M2O/qNk/8H/Fh56AokAAA=</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>f6fabd14-1a42-11e3-9d2f-00155d031803</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>217</FolderID>
+					<ParentID>214</ParentID>
+					<Name>LabTech Enhancement</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>214</FolderID>
+					<ParentID>0</ParentID>
+					<Name>*Packages</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

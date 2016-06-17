@@ -1,0 +1,48 @@
+﻿<LabTech_Expansion
+	Version="60.276"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>5932</ScriptId>
+				<FolderId>215</FolderId>
+				<ScriptName>AD - Get Local Admins for All Domain Machines</ScriptName>
+				<ScriptNotes>This script retrieves the local administrators from every machine in the OU chosen by the user. It then outputs to a CSV the “Username”, “PC Name” , ”Domain” and “Type” and attaches it to a ticket. Requires the user to input the Distinguished Name of an OU in the form of : 
+OU=All PC's,DC=marshall,DC=net
+
+</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih4/L6b5ssmfZm129PjN9So/2n18l38+frVenlTrZZvXRzuP73p/PT59typqvJMffTefLfNmll2P0uP1xbpp072dEf1/dz/dfbR779H9vfTlF4/vem88fj2ti1X7k3ndFNUSoMMP9PvP18XsKM937t9/8GBve+/g08n27m6+v32w/2C6vbOz+3C2e/BwfzrNzfv8wuO7/oB+4+T/AUllmQbgAAAA</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih6/ntbFqn2atdnRb5ykqf7d8B/05+m7ts7w7bMiL2dNetd88TKrs0Xe5nVz9OVXj+96f2qDz8tqkpXN0e/5Mmvnb6pnRZmfLZ+/+T0/G3mffLk8vsiXLT6s1u1q3Z7Th7/nZye/+73j3/3+yVWxnFVXDf32/M3rnzzBz2qalcezRbFsxtPm8vFd04t2Ktj/JKFRVMuj3cd3ww+CVp+vi9lRnu/cv//gwd723sGnk+3d3Xx/+2D/wXR7Z2f34Wz34OH+dJobKPwCE0k/aHySvW7zlcXjeNoqAvqbfv5sveS/z2ZHnx48vuv96ZN1t0Pmvc7f9zp/73f+vu/+fl3V7dEOIYyf+tlJtWyL5TrH5/Z3/e7L5nmxKPgV86t+c7ac0UxlPBr61v/Tp4kjwwa67G2gy97DYbocfdXkdTrPmnQ6r5p8mbbzPD2vyrIiVrlIv/wqfZT+nl9+9XsqP+7+/KXi7r1NZHykUl9dLcsqm/2skGv3/0vk2tvZ2UCurgqL08tvZvSattz7IErufdOU3PtZpOTu7v7tKNkhUZeYO3HSHT16tV4KZtrg3nvR8t7/l2i5/+nXNxFHi6wof0/8M55Wizitjj7P25RNaio2Nd1OBdP0Gb24rnN9bz+k6RG+zWdpW6Vkn1mFsCZ+WV2RoZ3nZZk2AoZa4ItZRYgs0ylRuCZtnddjBXw/mJz9/y9Nzu4mQ/UNG/D73zRh7v1sEuZ9TE96+uLpz4r5+fSbJtnPpvm5gWRdlfcNUooo9OD/W5S6/37mhf1B+oejC3wxYHA+kN0Ovmki/qyqrluy28+acD78pqn1s8tyG6l1UudZm78ppm/znx353N35WaTWN0+tg03y6QX5Pzu0+sajjp9NOdzk3x397tOyoG6L2e8+4CH/7uTXETHz2jXpOsu38QE9/y99XjQtAunt9Hc/4d6XlNT53dPfl/7UvviDAa/wdZ6nLctBmrVtNp0vCAKF5zX7gCXBTqvzNCPvsOQ+M8njRF3B3f9PBT17O3ubZlKIMjyTuwPT152agRn83dcruFL5DHI1MDldOTFx0P8nyPvDdLV3v/Eg5OfQ1/Zt08+aMd/9xqOTW1hz8/dTSVz/P47VhYjHFgAA</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>ee055772-286b-11e4-847c-0019d1894cce</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters>OU</Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>215</FolderID>
+					<ParentID>214</ParentID>
+					<Name>Active Directory</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>214</FolderID>
+					<ParentID>0</ParentID>
+					<Name>*Packages</Name>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

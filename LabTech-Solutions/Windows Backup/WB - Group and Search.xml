@@ -1,0 +1,90 @@
+﻿<LabTech_Expansion
+	Version="60.262"
+	Name="LabTech Group Expansion"
+	Type="Group">
+	<Group>
+		<NewDataSet>
+			<Table>
+				<GroupID>1133</GroupID>
+				<ParentID>7</ParentID>
+				<Parents>,7,</Parents>
+				<Children>,</Children>
+				<depth>1</depth>
+				<Name>Windows Backup</Name>
+				<FullName>Backup Management.Windows Backup</FullName>
+				<Permissions>0</Permissions>
+				<Template>0</Template>
+				<AutoJoinScript>729</AutoJoinScript>
+				<Master>0</Master>
+				<LimitToParent>0</LimitToParent>
+				<Control>0</Control>
+				<ControlID>0</ControlID>
+				<Notes></Notes>
+				<MaintenanceID>0</MaintenanceID>
+				<MaintWindowApplied>2014-05-08T10:29:49-04:00</MaintWindowApplied>
+				<GroupType>5</GroupType>
+				<Priority>5</Priority>
+				<GUID>89107aff-d6b4-11e3-b63e-005056be73cc</GUID>
+			</Table>
+		</NewDataSet>
+		<Search>
+			<NewDataSet>
+				<Table>
+					<SensID>729</SensID>
+					<Name>Backup - Windows Backup</Name>
+					<SQL>Select DISTINCT Computers.ComputerID, Clients.Name as `Client Name`, Computers.Name as ComputerName, Computers.Domain, Computers.UserName, eventlogs.`Source` as `eventlogs_Source` from Computers, Clients, eventlogs Where Computers.ClientID = Clients.ClientID and EventLogs.ComputerID = Computers.ComputerID and EventLogs.Timegen &gt; DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY)  and ((eventlogs.`Source` = 'Microsoft-Windows-Backup'))</SQL>
+					<QueryType>4</QueryType>
+					<ListDATA>Related - Event Logs|Source (eventlogs)|=|Microsoft-Windows-Backup|=||=|^</ListDATA>
+					<FolderID>2</FolderID>
+				</Table>
+			</NewDataSet>
+		</Search>
+		<GroupDMonitor>
+			<NewDataSet>
+				<Table>
+					<GroupDAgentID>561</GroupDAgentID>
+					<GroupID>1133</GroupID>
+					<AgentID>61799</AgentID>
+					<AlertAction>3</AlertAction>
+					<ScriptID>0</ScriptID>
+					<ContactID>0</ContactID>
+					<TicketCategory>0</TicketCategory>
+				</Table>
+			</NewDataSet>
+			<Monitor>
+				<NewDataSet>
+					<Table>
+						<AgentID>61799</AgentID>
+						<Name>BU - Windows Backup</Name>
+						<LocID>0</LocID>
+						<ClientID>0</ClientID>
+						<ComputerID>0</ComputerID>
+						<DriveID>1133</DriveID>
+						<CheckAction>0</CheckAction>
+						<AlertAction>1</AlertAction>
+						<AlertMessage>%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.</AlertMessage>
+						<ContactID>0</ContactID>
+						<interval>86400</interval>
+						<Where>eventlogs</Where>
+						<What>Source</What>
+						<DataOut>Eventlogs.eventid in (5,8,9,17,18,19,20,21,22,49,50,52,100,517,518,521,527,528,544,545,546,561,564,612)
+</DataOut>
+						<Comparor>1</Comparor>
+						<DataIn>Microsoft-Windows-Backup</DataIn>
+						<LastScan>1979-01-02T01:01:01-05:00</LastScan>
+						<LastFailed>1979-01-01T01:01:01-05:00</LastFailed>
+						<FailCount>0</FailCount>
+						<IDField>CONVERT(CONCAT(Eventlogs.eventid, '-',eventlogs.message)USING utf8)</IDField>
+						<AlertStyle>1</AlertStyle>
+						<Changed>0</Changed>
+						<Last_Date>2014-05-08T10:56:08-04:00</Last_Date>
+						<Last_User>root@localhost</Last_User>
+						<ReportCategory>0</ReportCategory>
+						<TicketCategory>0</TicketCategory>
+						<Flags>0</Flags>
+					</Table>
+				</NewDataSet>
+			</Monitor>
+		</GroupDMonitor>
+	</Group>
+</LabTech_Expansion>
